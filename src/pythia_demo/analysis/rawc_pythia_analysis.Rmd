@@ -1,0 +1,97 @@
+---
+title: "RAW-C Analysis"
+date: "January 12, 2026"
+output:
+  # pdf_document: 
+  #    fig_caption: yes
+  #    keep_md: yes
+  #    keep_tex: yes
+  html_document:
+     keep_md: yes
+     toc: yes
+     toc_float: yes
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(dpi = 300, fig.format = "png")
+```
+
+```{r include=FALSE}
+library(tidyverse)
+library(lme4)
+library(ggridges)
+library(lmerTest)
+library(broom.mixed)
+library(ggrepel)
+library(ggcorrplot)
+
+```
+
+
+# RAW-C task
+
+## Load data
+
+
+```{r include=FALSE}
+# setwd("/Users/seantrott/Dropbox/UCSD/Research/NLMs/VLM/grounding_eval_pipeline/src/pythia_demo/analysis")
+directory_path <- "../../../data/outputs/pythia_demo/rawc/"
+csv_files <- list.files(path = directory_path, pattern = "*.csv", full.names = TRUE)
+csv_list <- csv_files %>%
+  map(~ read_csv(.))
+df_pythia_models <- bind_rows(csv_list) %>%
+  mutate(model = sub("^EleutherAI/", "", mpath)) %>%
+  filter(Layer > 0)
+nrow(df_pythia_models)
+
+
+```
+
+## Visualize effect
+
+```{r}
+df_r2_by_layer = df_pythia_models %>%
+  group_by(model, n_params, Layer) %>%
+  summarise(r2 = cor(Distance, mean_relatedness)**2)
+
+
+df_r2_by_layer %>%
+  ggplot(aes(x = Layer,
+             y = r2,
+             color = reorder(model, n_params))) +
+  geom_line(alpha = .5, linewidth = 2) +
+    geom_hline(linetype = "dotted", 
+             yintercept = 0.64, color = "red",
+             size = 1.4) + 
+  scale_color_manual(values = viridisLite::viridis(6, option = "mako", 
+                                                   begin = 0.8, end = 0.15)) + 
+  theme_minimal() +
+  labs(x = "Layer", y = "R2", color = NULL) +
+  theme_minimal(base_size = 15) +
+  scale_y_continuous(limits = c(0, 1)) +
+  theme(text = element_text(size = 15),
+        legend.position = "bottom") 
+
+df_r2_by_layer %>%
+  group_by(model, n_params) %>%
+  summarise(max_r2 = max(r2)) %>%
+  ggplot(aes(x = n_params,
+             y = max_r2)) +
+  geom_point(size = 6,
+             alpha = .5) +
+  scale_x_log10() +
+    geom_hline(linetype = "dotted", 
+             yintercept = 0.64, color = "red",
+             size = 1.4) + 
+  geom_text_repel(aes(label=model), size=3) +
+  labs(x = "Parameters",
+       y = "Best R2") +
+  theme_minimal() +
+  scale_y_continuous(limits = c(0, 1)) +
+  theme(text = element_text(size = 15),
+        legend.position = "bottom") 
+  
+
+```
+
