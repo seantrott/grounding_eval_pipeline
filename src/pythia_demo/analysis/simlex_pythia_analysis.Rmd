@@ -1,0 +1,394 @@
+---
+title: "SimLex-999 Analysis"
+date: "January 12, 2026"
+output:
+  # pdf_document: 
+  #    fig_caption: yes
+  #    keep_md: yes
+  #    keep_tex: yes
+  html_document:
+     keep_md: yes
+     toc: yes
+     toc_float: yes
+
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(dpi = 300, fig.format = "png")
+```
+
+```{r include=FALSE}
+library(tidyverse)
+library(lme4)
+library(ggridges)
+library(lmerTest)
+library(broom.mixed)
+library(ggrepel)
+library(ggcorrplot)
+library(emmeans)
+
+```
+
+
+# SimLex-999 task
+
+## Load data
+
+
+```{r include=FALSE}
+# setwd("/Users/seantrott/Dropbox/UCSD/Research/NLMs/VLM/grounding_eval_pipeline/src/pythia_demo/analysis")
+directory_path <- "../../../data/outputs/pythia_demo/similarity/"
+csv_files <- list.files(path = directory_path, pattern = "*.csv", full.names = TRUE)
+csv_list <- csv_files %>%
+  map(~ read_csv(.))
+df_pythia_models <- bind_rows(csv_list) %>%
+  mutate(model = sub("^EleutherAI/", "", mpath)) %>%
+  filter(Layer > 0)
+table(df_pythia_models$model)
+
+
+```
+
+## Visualize effect
+
+```{r}
+df_r2_by_layer = df_pythia_models %>%
+  group_by(model, n_params, Layer) %>%
+  summarise(r2 = cor(Distance, similarity)**2)
+
+
+df_r2_by_layer %>%
+  ggplot(aes(x = Layer,
+             y = r2,
+             color = reorder(model, n_params))) +
+  geom_line(alpha = .5, linewidth = 2) +
+    geom_hline(linetype = "dotted", 
+             yintercept = 0.61, color = "red",
+             size = 1.4) + 
+  scale_color_manual(values = viridisLite::viridis(7, option = "mako", 
+                                                   begin = 0.8, end = 0.15)) + 
+  theme_minimal() +
+  labs(x = "Layer", y = "R2", color = NULL) +
+  theme_minimal(base_size = 15) +
+  scale_y_continuous(limits = c(0, 1)) +
+  theme(text = element_text(size = 15),
+        legend.position = "bottom") 
+
+
+
+df_r2_by_layer %>%
+  group_by(model, n_params) %>%
+  summarise(max_r2 = max(r2)) %>%
+  ggplot(aes(x = n_params,
+             y = max_r2)) +
+  geom_point(size = 6,
+             alpha = .5) +
+  scale_x_log10() +
+    geom_hline(linetype = "dotted", 
+             yintercept = 0.61, color = "red",
+             size = 1.4) + 
+  geom_text_repel(aes(label=model), size=3) +
+  labs(x = "Parameters",
+       y = "Best R2") +
+  theme_minimal() +
+  scale_y_continuous(limits = c(0, 1)) +
+  theme(text = element_text(size = 15),
+        legend.position = "bottom") 
+  
+
+```
+
+
+## Concreteness analysis
+
+```{r simlex_stats}
+df_simlex_og = read_delim("../../../data/tasks/static_word_similarity/SimLex-999/SimLex-999.txt",
+                        delim = "\t")
+
+### Just looking at quartiles
+df_simlex_og %>%
+  ggplot(aes(x = `conc(w1)`,
+             y = `conc(w2)`)) +
+  geom_jitter(alpha = .4) +
+  theme_minimal() +
+  facet_wrap(~concQ)
+
+
+## Difference in mean similarity by quartile?
+df_simlex_og %>%
+  ggplot(aes(x = factor(concQ),
+             y = SimLex999)) +
+  geom_jitter(alpha = .5) +
+  geom_boxplot() +
+  theme_minimal()
+
+### On average, lower similarity between more concrete pairs; good to know.
+summary(lm(data = df_simlex_og, SimLex999 ~ concQ))
+
+
+## Now merge
+df_merged = df_pythia_models %>%
+  inner_join(df_simlex_og)
+
+
+```
+
+### R2 by layer
+
+```{r r2_by_layer}
+
+df_r2_by_layer = df_merged %>%
+  group_by(model, n_params, Layer, concQ) %>%
+  summarise(r2 = cor(Distance, similarity)**2)
+
+df_r2_by_layer %>%
+  ggplot(aes(x = Layer,
+             y = r2,
+             color = reorder(model, n_params))) +
+  geom_line(alpha = .5, linewidth = 2) +
+  scale_color_manual(values = viridisLite::viridis(7, option = "mako", 
+                                                   begin = 0.8, end = 0.15)) + 
+  theme_minimal() +
+  labs(x = "Layer", y = "R2", color = NULL) +
+  theme_minimal(base_size = 15) +
+  theme(text = element_text(size = 15),
+        legend.position = "bottom")  +
+  facet_wrap(~concQ)
+
+
+
+### Layer depth
+df_r2_by_layer %>%
+  group_by(model) %>%
+  mutate(max_layer = max(Layer),
+         layer_depth = Layer/max_layer) %>%
+  ggplot(aes(x = layer_depth,
+             y = r2,
+             color = reorder(model, n_params))) +
+  geom_line(alpha = .5, linewidth = 2) +
+  scale_color_manual(values = viridisLite::viridis(7, option = "mako", 
+                                                   begin = 0.8, end = 0.15)) + 
+  theme_minimal() +
+  labs(x = "Layer Depth", y = "R2", color = NULL) +
+  theme_minimal(base_size = 15) +
+  theme(text = element_text(size = 15),
+        legend.position = "bottom")  +
+  facet_wrap(~concQ)
+
+```
+
+
+### Mean R2
+
+```{r mean_r2}
+df_r2_by_layer %>%
+  group_by(model, n_params, concQ) %>%
+  summarise(mean_r2 = mean(r2)) %>%
+  ggplot(aes(x = n_params,
+             y = mean_r2,
+             color = factor(concQ))) +
+  geom_point(size = 6,
+             alpha = .5) +
+  scale_x_log10() +
+  geom_text_repel(aes(label=model), size=3) +
+  labs(x = "Parameters",
+       y = "Mean R2") +
+  theme_minimal() +
+  theme(text = element_text(size = 15),
+        legend.position = "bottom") +
+  facet_wrap(~concQ)
+
+df_r2_by_layer %>%
+  group_by(model, n_params, concQ) %>%
+  summarise(max_r2 = mean(r2)) %>%
+  ggplot(aes(x = concQ,
+             y = max_r2,
+             color = reorder(model, n_params))) +
+  geom_point() +
+  geom_line() +
+  scale_color_manual(values = viridisLite::viridis(7, option = "mako", 
+                                                   begin = 0.8, end = 0.15)) + 
+
+  labs(x = "Concreteness Quartile",
+       y = "Mean R2") +
+  theme_minimal() +
+  theme(text = element_text(size = 15),
+        legend.position = "none") +
+  facet_wrap(~reorder(model, n_params))
+
+
+```
+
+
+### Max R2
+
+```{r max_r2}
+df_r2_by_layer %>%
+  group_by(model, n_params, concQ) %>%
+  summarise(max_r2 = max(r2)) %>%
+  ggplot(aes(x = n_params,
+             y = max_r2,
+             color = factor(concQ))) +
+  geom_point(size = 6,
+             alpha = .5) +
+  scale_x_log10() +
+  geom_text_repel(aes(label=model), size=3) +
+  labs(x = "Parameters",
+       y = "Best R2") +
+  theme_minimal() +
+  theme(text = element_text(size = 15),
+        legend.position = "bottom") +
+  facet_wrap(~concQ)
+
+
+df_r2_by_layer %>%
+  group_by(model, n_params, concQ) %>%
+  summarise(max_r2 = max(r2)) %>%
+  ggplot(aes(x = concQ,
+             y = max_r2,
+             color = reorder(model, n_params))) +
+  geom_point() +
+  geom_line() +
+  labs(x = "Concreteness Quartile",
+       y = "Best R2") +
+  theme_minimal() +
+  scale_color_manual(values = viridisLite::viridis(7, option = "mako", 
+                                                   begin = 0.8, end = 0.15)) + 
+  theme(text = element_text(size = 15),
+        legend.position = "none") +
+  facet_wrap(~reorder(model, n_params))
+
+
+```
+
+### Abstractness advantage
+
+```{r abstractness_advantage}
+
+### Abstractness advantage?
+df_adv = df_r2_by_layer %>%
+  group_by(model, n_params, concQ) %>%
+  summarise(max_r2 = max(r2)) %>%
+  pivot_wider(names_from = concQ,
+              values_from = max_r2) %>%
+  summarise(abstractness_advantage1 = (`1` + `2`)/2 - (`3` + `4`)/2,
+            abstractness_advantage2 = `1` - `4`)
+df_adv
+
+
+df_adv %>%
+  ggplot(aes(x = n_params,
+             y = abstractness_advantage1)) + 
+  geom_point(size = 6,
+             alpha = .5) +
+  scale_x_log10() +
+  geom_text_repel(aes(label=model), size=3) +
+  labs(x = "Parameters",
+       y = "Abstractness advantage") +
+  theme_minimal() +
+  theme(text = element_text(size = 15),
+        legend.position = "bottom")
+
+df_adv %>%
+  ggplot(aes(x = n_params,
+             y = abstractness_advantage2)) + 
+  geom_point(size = 6,
+             alpha = .5) +
+  scale_x_log10() +
+  geom_text_repel(aes(label=model), size=3) +
+  labs(x = "Parameters",
+       y = "Abstractness advantage") +
+  theme_minimal() +
+  theme(text = element_text(size = 15),
+        legend.position = "bottom")
+
+
+```
+
+
+## Analysis (max R2)
+
+Here, we do several kinds of analysis for a robustness check.
+
+```{r analysis_interaction}
+### Analysis 1: Does r2 vary by concQ/layer/model?
+summary(lm(data = df_r2_by_layer,
+        r2 ~ Layer + concQ + log10(n_params)))
+
+### Analysis 2: Does *max R2* for a model vary by concQ?
+df_max_r2 = df_r2_by_layer %>%
+  group_by(model, n_params, concQ) %>%
+  summarise(max_r2 = max(r2))
+summary(lm(data = df_max_r2,
+        max_r2 ~ concQ + log10(n_params)))
+
+### Analysis 3: Does Distance interact with ConcQ?
+### First, get best layer for each model
+best_layers <- df_merged %>%
+  group_by(model, Layer) %>%
+  summarise(r2 = cor(Distance, similarity)^2) %>%
+  slice_max(r2, n = 1) %>%
+  select(model, best_layer = Layer)
+
+### Then merge
+df_best <- df_merged %>%
+  inner_join(best_layers) %>%
+  filter(Layer == best_layer)
+
+mod = lmer(similarity ~ Distance* concQ + (1 | model), data = 
+       df_best)
+summary(mod)
+emtrends(mod, ~ concQ, var = "Distance", at = list(concQ = c(1, 2, 3, 4)))
+
+df_best %>%
+  ggplot(aes(x = Distance,
+             y = similarity)) +
+  geom_point(alpha = .2) +
+  geom_smooth(method = "lm") +
+  theme_minimal() +
+  facet_wrap(~concQ)
+
+
+
+### Analysis 4: Using Spearman's rho isntead? 
+### (Motivation: it is possible that R2/pearson's r is skewed by the distributions of the quartiles)
+df_rho = df_best %>%
+  group_by(model, concQ, n_params) %>%
+  summarise(spearman = cor(Distance, similarity, method = "spearman")) 
+
+summary(lm(data = df_rho,
+        abs(spearman) ~ concQ + log10(n_params)))
+```
+
+### Residuals analysis
+
+```{r residuals_analysis}
+### Analysis 4: Residuals
+mod_prediction = lmer(similarity ~ Distance + (1 | model), 
+                      data = df_best)
+df_best$resid <- residuals(mod_prediction)
+
+df_pair_resids <- df_best %>%
+  group_by(word1, word2, concQ, SimAssoc333) %>%
+  summarise(mean_resid = mean(resid),
+            mean_similarity = mean(similarity),
+            mean_distance = mean(Distance)) %>%
+  ungroup()
+
+df_pair_resids %>%
+  ggplot(aes(x = mean_similarity, y = mean_resid,
+             color = factor(SimAssoc333))) +
+  geom_point(alpha = .3) +
+  geom_hline(yintercept = 0, linetype = "dashed") +
+  geom_text_repel(data = . %>% filter(abs(mean_resid) > quantile(abs(mean_resid), 0.95)),
+                  aes(label = paste(word1, word2, sep = " / ")),
+                  size = 2.5) +
+  facet_wrap(~concQ) +
+  labs(x = "Human Similarity", y = "Residual") +
+  theme_minimal()
+
+
+summary(lm(data = df_pair_resids, abs(mean_resid) ~ concQ + SimAssoc333))
+```
+
+

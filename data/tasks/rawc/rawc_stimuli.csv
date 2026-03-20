@@ -1,0 +1,673 @@
+word,sentence1,sentence2,same,ambiguity_type,Class,mean_relatedness,string
+act,It was a desperate act.,It was a magic act.,False,Polysemy,N,2.181818182,act
+act,It was a desperate act.,It was a comedic act.,False,Polysemy,N,2.0,act
+act,It was a humane act.,It was a magic act.,False,Polysemy,N,2.818181818,act
+act,It was a humane act.,It was a comedic act.,False,Polysemy,N,2.80952381,act
+act,It was a desperate act.,It was a humane act.,True,Polysemy,N,3.9,act
+act,It was a magic act.,It was a comedic act.,True,Polysemy,N,3.764705882,act
+appeal,He had a universal appeal.,He had a legal appeal.,False,Polysemy,N,1.571428571,appeal
+appeal,He had a universal appeal.,He had a pending appeal.,False,Polysemy,N,1.0,appeal
+appeal,He had an undefinable appeal.,He had a legal appeal.,False,Polysemy,N,1.235294118,appeal
+appeal,He had an undefinable appeal.,He had a pending appeal.,False,Polysemy,N,0.714285714,appeal
+appeal,He had a universal appeal.,He had an undefinable appeal.,True,Polysemy,N,3.7,appeal
+appeal,He had a legal appeal.,He had a pending appeal.,True,Polysemy,N,3.272727273,appeal
+atmosphere,It was a tense atmosphere.,It was a gaseous atmosphere.,False,Polysemy,N,1.214285714,atmosphere
+atmosphere,It was a tense atmosphere.,It was a polluted atmosphere.,False,Polysemy,N,1.846153846,atmosphere
+atmosphere,It was a hostile atmosphere.,It was a gaseous atmosphere.,False,Polysemy,N,1.538461538,atmosphere
+atmosphere,It was a hostile atmosphere.,It was a polluted atmosphere.,False,Polysemy,N,2.181818182,atmosphere
+atmosphere,It was a tense atmosphere.,It was a hostile atmosphere.,True,Polysemy,N,4.0,atmosphere
+atmosphere,It was a gaseous atmosphere.,It was a polluted atmosphere.,True,Polysemy,N,3.466666667,atmosphere
+bail,He bailed out the prisoner.,He bailed out the water.,False,Homonymy,V,0.894736842,bailed
+bail,He bailed out the prisoner.,He bailed out the liquid.,False,Homonymy,V,0.666666667,bailed
+bail,He bailed out the defendant.,He bailed out the water.,False,Homonymy,V,0.75,bailed
+bail,He bailed out the defendant.,He bailed out the liquid.,False,Homonymy,V,0.764705882,bailed
+bail,He bailed out the prisoner.,He bailed out the defendant.,True,Homonymy,V,3.083333333,bailed
+bail,He bailed out the water.,He bailed out the liquid.,True,Homonymy,V,3.083333333,bailed
+band,It was a gold band.,It was a jazz band.,False,Homonymy,N,0.2,band
+band,It was a gold band.,It was a country band.,False,Homonymy,N,0.384615385,band
+band,It was a rubber band.,It was a jazz band.,False,Homonymy,N,0.333333333,band
+band,It was a rubber band.,It was a country band.,False,Homonymy,N,0.1,band
+band,It was a gold band.,It was a rubber band.,True,Homonymy,N,2.526315789,band
+band,It was a jazz band.,It was a country band.,True,Homonymy,N,4.0,band
+bank,He banked the plane.,He banked the money.,False,Homonymy,V,1.0,banked
+bank,He banked the plane.,He banked the cash.,False,Homonymy,V,0.733333333,banked
+bank,He banked the helicopter.,He banked the money.,False,Homonymy,V,0.6,banked
+bank,He banked the helicopter.,He banked the cash.,False,Homonymy,V,1.375,banked
+bank,He banked the plane.,He banked the helicopter.,True,Homonymy,V,3.333333333,banked
+bank,He banked the money.,He banked the cash.,True,Homonymy,V,3.533333333,banked
+barrier,There was a police barrier.,There was a language barrier.,False,Polysemy,N,1.333333333,barrier
+barrier,There was a police barrier.,There was a religious barrier.,False,Polysemy,N,1.266666667,barrier
+barrier,There was a concrete barrier.,There was a language barrier.,False,Polysemy,N,1.692307692,barrier
+barrier,There was a concrete barrier.,There was a religious barrier.,False,Polysemy,N,1.727272727,barrier
+barrier,There was a police barrier.,There was a concrete barrier.,True,Polysemy,N,2.923076923,barrier
+barrier,There was a language barrier.,There was a religious barrier.,True,Polysemy,N,3.538461538,barrier
+bat,He saw a furry bat.,He saw a wooden bat.,False,Homonymy,N,0.0,bat
+bat,He saw a furry bat.,He saw a baseball bat.,False,Homonymy,N,0.5,bat
+bat,He saw a fruit bat.,He saw a wooden bat.,False,Homonymy,N,0.2,bat
+bat,He saw a fruit bat.,He saw a baseball bat.,False,Homonymy,N,0.083333333,bat
+bat,He saw a furry bat.,He saw a fruit bat.,True,Homonymy,N,3.55,bat
+bat,He saw a wooden bat.,He saw a baseball bat.,True,Homonymy,N,3.545454545,bat
+beam,He saw the laser beam.,He saw the wood beam.,False,Polysemy,N,1.142857143,beam
+beam,He saw the laser beam.,He saw the balance beam.,False,Polysemy,N,0.833333333,beam
+beam,He saw the bright beam.,He saw the wood beam.,False,Polysemy,N,0.555555556,beam
+beam,He saw the bright beam.,He saw the balance beam.,False,Polysemy,N,0.363636364,beam
+beam,He saw the laser beam.,He saw the bright beam.,True,Polysemy,N,3.545454545,beam
+beam,He saw the wood beam.,He saw the balance beam.,True,Polysemy,N,2.6,beam
+block,She had a toy block.,She had a mental block.,False,Polysemy,N,0.538461538,block
+block,She had a toy block.,She had a writer's block.,False,Polysemy,N,0.133333333,block
+block,She had a wooden block.,She had a mental block.,False,Polysemy,N,1.0,block
+block,She had a wooden block.,She had a writer's block.,False,Polysemy,N,0.2,block
+block,She had a toy block.,She had a wooden block.,True,Polysemy,N,3.8,block
+block,She had a mental block.,She had a writer's block.,True,Polysemy,N,3.181818182,block
+blood,He has coagulated blood.,He has noble blood.,False,Polysemy,N,1.6,blood
+blood,He has coagulated blood.,He has royal blood.,False,Polysemy,N,2.5,blood
+blood,He has thin blood.,He has noble blood.,False,Polysemy,N,2.222222222,blood
+blood,He has thin blood.,He has royal blood.,False,Polysemy,N,2.214285714,blood
+blood,He has coagulated blood.,He has thin blood.,True,Polysemy,N,3.631578947,blood
+blood,He has noble blood.,He has royal blood.,True,Polysemy,N,3.583333333,blood
+board,It was the ironing board.,It was the executive board.,False,Polysemy,N,0.066666667,board
+board,It was the ironing board.,It was the school board.,False,Polysemy,N,0.416666667,board
+board,It was the wooden board.,It was the executive board.,False,Polysemy,N,0.25,board
+board,It was the wooden board.,It was the school board.,False,Polysemy,N,0.6,board
+board,It was the ironing board.,It was the wooden board.,True,Polysemy,N,2.625,board
+board,It was the executive board.,It was the school board.,True,Polysemy,N,3.666666667,board
+book,He had a best-selling book.,He had a heavy book.,False,Polysemy,N,3.692307692,book
+book,He had a best-selling book.,He had a leather-bound book.,False,Polysemy,N,3.357142857,book
+book,He had a popular book.,He had a heavy book.,False,Polysemy,N,4.0,book
+book,He had a popular book.,He had a leather-bound book.,False,Polysemy,N,3.818181818,book
+book,He had a best-selling book.,He had a popular book.,True,Polysemy,N,4.0,book
+book,He had a heavy book.,He had a leather-bound book.,True,Polysemy,N,3.75,book
+break,He broke the glass.,He broke the law.,False,Polysemy,V,1.733333333,broke
+break,He broke the glass.,He broke the promise.,False,Polysemy,V,2.357142857,broke
+break,He broke the dish.,He broke the law.,False,Polysemy,V,2.3,broke
+break,He broke the dish.,He broke the promise.,False,Polysemy,V,2.3,broke
+break,He broke the glass.,He broke the dish.,True,Polysemy,V,4.0,broke
+break,He broke the law.,He broke the promise.,True,Polysemy,V,3.692307692,broke
+breakfast,They ate a pancake breakfast.,They ate a family breakfast.,False,Polysemy,N,3.785714286,breakfast
+breakfast,They ate a pancake breakfast.,They ate a lonely breakfast.,False,Polysemy,N,3.941176471,breakfast
+breakfast,They ate a nutritious breakfast.,They ate a family breakfast.,False,Polysemy,N,3.666666667,breakfast
+breakfast,They ate a nutritious breakfast.,They ate a lonely breakfast.,False,Polysemy,N,3.333333333,breakfast
+breakfast,They ate a pancake breakfast.,They ate a nutritious breakfast.,True,Polysemy,N,4.0,breakfast
+breakfast,They ate a family breakfast.,They ate a lonely breakfast.,True,Polysemy,N,3.8,breakfast
+call,They called the landlord.,They called the loan.,False,Polysemy,V,1.222222222,called
+call,They called the landlord.,They called the debt.,False,Polysemy,V,1.3,called
+call,They called the police.,They called the loan.,False,Polysemy,V,1.357142857,called
+call,They called the police.,They called the debt.,False,Polysemy,V,1.0,called
+call,They called the landlord.,They called the police.,True,Polysemy,V,3.866666667,called
+call,They called the loan.,They called the debt.,True,Polysemy,V,3.076923077,called
+cape,It was a red cape.,It was a rocky cape.,False,Homonymy,N,0.090909091,cape
+cape,It was a red cape.,It was an island cape.,False,Homonymy,N,0.181818182,cape
+cape,It was a flowing cape.,It was a rocky cape.,False,Homonymy,N,1.0,cape
+cape,It was a flowing cape.,It was an island cape.,False,Homonymy,N,0.428571429,cape
+cape,It was a red cape.,It was a flowing cape.,True,Homonymy,N,3.266666667,cape
+cape,It was a rocky cape.,It was an island cape.,True,Homonymy,N,2.866666667,cape
+case,It was a beer case.,It was a divorce case.,False,Homonymy,N,0.166666667,case
+case,It was a beer case.,It was a criminal case.,False,Homonymy,N,0.4,case
+case,It was a display case.,It was a divorce case.,False,Homonymy,N,0.25,case
+case,It was a display case.,It was a criminal case.,False,Homonymy,N,0.363636364,case
+case,It was a beer case.,It was a display case.,True,Homonymy,N,1.75,case
+case,It was a divorce case.,It was a criminal case.,True,Homonymy,N,3.928571429,case
+cast,She cast a shadow.,She cast a spear.,False,Polysemy,V,0.909090909,cast
+cast,She cast a shadow.,She cast a stone.,False,Polysemy,V,1.142857143,cast
+cast,She cast a glow.,She cast a spear.,False,Polysemy,V,1.461538462,cast
+cast,She cast a glow.,She cast a stone.,False,Polysemy,V,0.941176471,cast
+cast,She cast a shadow.,She cast a glow.,True,Polysemy,V,3.285714286,cast
+cast,She cast a spear.,She cast a stone.,True,Polysemy,V,3.2,cast
+cause,It was a worthy cause.,It was a main cause.,False,Polysemy,N,2.272727273,cause
+cause,It was a worthy cause.,It was a primary cause.,False,Polysemy,N,2.352941176,cause
+cause,It was a political cause.,It was a main cause.,False,Polysemy,N,2.5,cause
+cause,It was a political cause.,It was a primary cause.,False,Polysemy,N,2.071428571,cause
+cause,It was a worthy cause.,It was a political cause.,True,Polysemy,N,3.461538462,cause
+cause,It was a main cause.,It was a primary cause.,True,Polysemy,N,4.0,cause
+cell,It was a skin cell.,It was a prison cell.,False,Polysemy,N,0.2,cell
+cell,It was a skin cell.,It was a jail cell.,False,Polysemy,N,0.428571429,cell
+cell,It was a brain cell.,It was a prison cell.,False,Polysemy,N,0.272727273,cell
+cell,It was a brain cell.,It was a jail cell.,False,Polysemy,N,0.133333333,cell
+cell,It was a skin cell.,It was a brain cell.,True,Polysemy,N,3.947368421,cell
+cell,It was a prison cell.,It was a jail cell.,True,Polysemy,N,4.0,cell
+charm,She had a devilish charm.,She had a gold charm.,False,Polysemy,N,1.0,charm
+charm,She had a devilish charm.,She had a good-luck charm.,False,Polysemy,N,0.727272727,charm
+charm,She had a natural charm.,She had a gold charm.,False,Polysemy,N,0.588235294,charm
+charm,She had a natural charm.,She had a good-luck charm.,False,Polysemy,N,1.285714286,charm
+charm,She had a devilish charm.,She had a natural charm.,True,Polysemy,N,3.846153846,charm
+charm,She had a gold charm.,She had a good-luck charm.,True,Polysemy,N,3.166666667,charm
+check,He checked the engine.,He checked the alibi.,False,Polysemy,V,3.1,checked
+check,He checked the engine.,He checked the facts.,False,Polysemy,V,2.857142857,checked
+check,He checked the oven.,He checked the alibi.,False,Polysemy,V,2.684210526,checked
+check,He checked the oven.,He checked the facts.,False,Polysemy,V,3.142857143,checked
+check,He checked the engine.,He checked the oven.,True,Polysemy,V,3.666666667,checked
+check,He checked the alibi.,He checked the facts.,True,Polysemy,V,3.6,checked
+chicken,They liked the juicy chicken.,They liked the clucking chicken.,False,Polysemy,N,3.0,chicken
+chicken,They liked the juicy chicken.,They liked the pet chicken.,False,Polysemy,N,2.888888889,chicken
+chicken,They liked the roasted chicken.,They liked the clucking chicken.,False,Polysemy,N,3.555555556,chicken
+chicken,They liked the roasted chicken.,They liked the pet chicken.,False,Polysemy,N,3.571428571,chicken
+chicken,They liked the juicy chicken.,They liked the roasted chicken.,True,Polysemy,N,4.0,chicken
+chicken,They liked the clucking chicken.,They liked the pet chicken.,True,Polysemy,N,3.5625,chicken
+class,It was a perceptive class.,It was a boring class.,False,Polysemy,N,3.545454545,class
+class,It was a perceptive class.,It was a stimulating class.,False,Polysemy,N,3.583333333,class
+class,It was a misbehaving class.,It was a boring class.,False,Polysemy,N,2.9375,class
+class,It was a misbehaving class.,It was a stimulating class.,False,Polysemy,N,2.8,class
+class,It was a perceptive class.,It was a misbehaving class.,True,Polysemy,N,2.545454545,class
+class,It was a boring class.,It was a stimulating class.,True,Polysemy,N,3.833333333,class
+clear,He cleared the desk.,He cleared the path.,False,Polysemy,V,3.333333333,cleared
+clear,He cleared the desk.,He cleared the road.,False,Polysemy,V,2.833333333,cleared
+clear,He cleared the shelf.,He cleared the path.,False,Polysemy,V,3.466666667,cleared
+clear,He cleared the shelf.,He cleared the road.,False,Polysemy,V,2.909090909,cleared
+clear,He cleared the desk.,He cleared the shelf.,True,Polysemy,V,3.956521739,cleared
+clear,He cleared the path.,He cleared the road.,True,Polysemy,V,3.9,cleared
+clip,It was a film clip.,It was a hair clip.,False,Homonymy,N,0.7,clip
+clip,It was a film clip.,It was a metal clip.,False,Homonymy,N,0.555555556,clip
+clip,It was a video clip.,It was a hair clip.,False,Homonymy,N,0.4,clip
+clip,It was a video clip.,It was a metal clip.,False,Homonymy,N,0.222222222,clip
+clip,It was a film clip.,It was a video clip.,True,Homonymy,N,4.0,clip
+clip,It was a hair clip.,It was a metal clip.,True,Homonymy,N,2.714285714,clip
+clog,The dancer clogged.,The pipe clogged.,False,Polysemy,V,0.3,clogged
+clog,The dancer clogged.,The sink clogged.,False,Polysemy,V,0.142857143,clogged
+clog,The choreographer clogged.,The pipe clogged.,False,Polysemy,V,0.285714286,clogged
+clog,The choreographer clogged.,The sink clogged.,False,Polysemy,V,0.461538462,clogged
+clog,The dancer clogged.,The choreographer clogged.,True,Polysemy,V,3.368421053,clogged
+clog,The pipe clogged.,The sink clogged.,True,Polysemy,V,4.0,clogged
+cold,It was an icy cold.,It was a chest cold.,False,Polysemy,N,1.294117647,cold
+cold,It was an icy cold.,It was a common cold.,False,Polysemy,N,0.875,cold
+cold,It was a freezing cold.,It was a chest cold.,False,Polysemy,N,1.230769231,cold
+cold,It was a freezing cold.,It was a common cold.,False,Polysemy,N,0.818181818,cold
+cold,It was an icy cold.,It was a freezing cold.,True,Polysemy,N,3.842105263,cold
+cold,It was a chest cold.,It was a common cold.,True,Polysemy,N,3.444444444,cold
+column,It was a gossip column.,It was a concrete column.,False,Polysemy,N,0.125,column
+column,It was a gossip column.,It was a marble column.,False,Polysemy,N,0.411764706,column
+column,It was a sports column.,It was a concrete column.,False,Polysemy,N,0.111111111,column
+column,It was a sports column.,It was a marble column.,False,Polysemy,N,0.555555556,column
+column,It was a gossip column.,It was a sports column.,True,Polysemy,N,3.928571429,column
+column,It was a concrete column.,It was a marble column.,True,Polysemy,N,3.727272727,column
+company,He liked the investment company.,He liked the pleasant company.,False,Polysemy,N,1.0,company
+company,He liked the investment company.,He liked the polite company.,False,Polysemy,N,0.733333333,company
+company,He liked the pharmaceutical company.,He liked the pleasant company.,False,Polysemy,N,0.615384615,company
+company,He liked the pharmaceutical company.,He liked the polite company.,False,Polysemy,N,0.3125,company
+company,He liked the investment company.,He liked the pharmaceutical company.,True,Polysemy,N,3.5,company
+company,He liked the pleasant company.,He liked the polite company.,True,Polysemy,N,3.764705882,company
+cone,It was a waffle cone.,It was an orange cone.,False,Polysemy,N,1.785714286,cone
+cone,It was a waffle cone.,It was a traffic cone.,False,Polysemy,N,1.133333333,cone
+cone,It was a sugar cone.,It was an orange cone.,False,Polysemy,N,1.466666667,cone
+cone,It was a sugar cone.,It was a traffic cone.,False,Polysemy,N,1.666666667,cone
+cone,It was a waffle cone.,It was a sugar cone.,True,Polysemy,N,4.0,cone
+cone,It was an orange cone.,It was a traffic cone.,True,Polysemy,N,3.647058824,cone
+contribution,He made a charitable contribution.,He made a scholarly contribution.,False,Polysemy,N,3.375,contribution
+contribution,He made a charitable contribution.,He made a well-written contribution.,False,Polysemy,N,1.9375,contribution
+contribution,He made a voluntary contribution.,He made a scholarly contribution.,False,Polysemy,N,3.411764706,contribution
+contribution,He made a voluntary contribution.,He made a well-written contribution.,False,Polysemy,N,2.857142857,contribution
+contribution,He made a charitable contribution.,He made a voluntary contribution.,True,Polysemy,N,3.875,contribution
+contribution,He made a scholarly contribution.,He made a well-written contribution.,True,Polysemy,N,3.076923077,contribution
+count,That was the noble count.,That was the final count.,False,Homonymy,N,0.142857143,count
+count,That was the noble count.,That was the correct count.,False,Homonymy,N,0.375,count
+count,That was the vengeful count.,That was the final count.,False,Homonymy,N,0.75,count
+count,That was the vengeful count.,That was the correct count.,False,Homonymy,N,0.9375,count
+count,That was the noble count.,That was the vengeful count.,True,Homonymy,N,3.0,count
+count,That was the final count.,That was the correct count.,True,Homonymy,N,3.416666667,count
+course,It was an introductory course.,It was a charted course.,False,Polysemy,N,1.25,course
+course,It was an introductory course.,It was a collision course.,False,Polysemy,N,1.375,course
+course,It was a pass-fail course.,It was a charted course.,False,Polysemy,N,0.7,course
+course,It was a pass-fail course.,It was a collision course.,False,Polysemy,N,1.111111111,course
+course,It was an introductory course.,It was a pass-fail course.,True,Polysemy,N,3.909090909,course
+course,It was a charted course.,It was a collision course.,True,Polysemy,N,2.222222222,course
+cross,He crossed a road.,He crossed an enemy.,False,Polysemy,V,0.727272727,crossed
+cross,He crossed a road.,He crossed a friend.,False,Polysemy,V,0.375,crossed
+cross,He crossed a room.,He crossed an enemy.,False,Polysemy,V,0.882352941,crossed
+cross,He crossed a room.,He crossed a friend.,False,Polysemy,V,0.642857143,crossed
+cross,He crossed a road.,He crossed a room.,True,Polysemy,V,2.666666667,crossed
+cross,He crossed an enemy.,He crossed a friend.,True,Polysemy,V,3.0,crossed
+date,It was a dinner date.,It was an expiration date.,False,Polysemy,N,1.25,date
+date,It was a dinner date.,It was a historical date.,False,Polysemy,N,1.176470588,date
+date,It was a blind date.,It was an expiration date.,False,Polysemy,N,0.230769231,date
+date,It was a blind date.,It was a historical date.,False,Polysemy,N,0.75,date
+date,It was a dinner date.,It was a blind date.,True,Polysemy,N,3.882352941,date
+date,It was an expiration date.,It was a historical date.,True,Polysemy,N,2.928571429,date
+degree,It was about forty degrees.,It was about associate degrees.,False,Polysemy,N,0.071428571,degrees
+degree,It was about forty degrees.,It was about college degrees.,False,Polysemy,N,0.166666667,degrees
+degree,It was about fifty degrees.,It was about associate degrees.,False,Polysemy,N,0.076923077,degrees
+degree,It was about fifty degrees.,It was about college degrees.,False,Polysemy,N,0.0,degrees
+degree,It was about forty degrees.,It was about fifty degrees.,True,Polysemy,N,3.736842105,degrees
+degree,It was about associate degrees.,It was about college degrees.,True,Polysemy,N,3.888888889,degrees
+design,They liked the floral design.,They liked the product design.,False,Polysemy,N,2.888888889,design
+design,They liked the floral design.,They liked the architectural design.,False,Polysemy,N,3.75,design
+design,They liked the geometric design.,They liked the product design.,False,Polysemy,N,3.454545455,design
+design,They liked the geometric design.,They liked the architectural design.,False,Polysemy,N,3.538461538,design
+design,They liked the floral design.,They liked the geometric design.,True,Polysemy,N,3.9,design
+design,They liked the product design.,They liked the architectural design.,True,Polysemy,N,3.5,design
+dinner,They liked the turkey dinner.,They liked the formal dinner.,False,Polysemy,N,3.75,dinner
+dinner,They liked the turkey dinner.,They liked the anniversary dinner.,False,Polysemy,N,3.733333333,dinner
+dinner,They liked the light dinner.,They liked the formal dinner.,False,Polysemy,N,3.454545455,dinner
+dinner,They liked the light dinner.,They liked the anniversary dinner.,False,Polysemy,N,3.846153846,dinner
+dinner,They liked the turkey dinner.,They liked the light dinner.,True,Polysemy,N,3.846153846,dinner
+dinner,They liked the formal dinner.,They liked the anniversary dinner.,True,Polysemy,N,3.923076923,dinner
+drain,They drained the account.,They drained the pool.,False,Polysemy,V,1.615384615,drained
+drain,They drained the account.,They drained the pond.,False,Polysemy,V,2.333333333,drained
+drain,They drained the budget.,They drained the pool.,False,Polysemy,V,1.7,drained
+drain,They drained the budget.,They drained the pond.,False,Polysemy,V,1.9375,drained
+drain,They drained the account.,They drained the budget.,True,Polysemy,V,3.8,drained
+drain,They drained the pool.,They drained the pond.,True,Polysemy,V,3.75,drained
+draw,He drew a gun.,He drew a tree.,False,Polysemy,V,0.363636364,drew
+draw,He drew a gun.,They drew a picture.,False,Polysemy,V,0.461538462,drew
+draw,He drew a sword.,He drew a tree.,False,Polysemy,V,0.6,drew
+draw,He drew a sword.,They drew a picture.,False,Polysemy,V,0.473684211,drew
+draw,He drew a gun.,He drew a sword.,True,Polysemy,V,3.0625,drew
+draw,He drew a tree.,They drew a picture.,True,Polysemy,V,4.0,drew
+dream,He had a recurring dream.,He had a childhood dream.,False,Polysemy,N,2.5,dream
+dream,He had a recurring dream.,He had a career dream.,False,Polysemy,N,1.764705882,dream
+dream,He had a bad dream.,He had a childhood dream.,False,Polysemy,N,1.888888889,dream
+dream,He had a bad dream.,He had a career dream.,False,Polysemy,N,1.777777778,dream
+dream,He had a recurring dream.,He had a bad dream.,True,Polysemy,N,4.0,dream
+dream,He had a childhood dream.,He had a career dream.,True,Polysemy,N,3.421052632,dream
+drill,It was a grueling drill.,It was an electric drill.,False,Homonymy,N,0.4,drill
+drill,It was a grueling drill.,It was a battery-powered drill.,False,Homonymy,N,0.636363636,drill
+drill,It was a challenging drill.,It was an electric drill.,False,Homonymy,N,0.230769231,drill
+drill,It was a challenging drill.,It was a battery-powered drill.,False,Homonymy,N,0.153846154,drill
+drill,It was a grueling drill.,It was a challenging drill.,True,Homonymy,N,2.888888889,drill
+drill,It was an electric drill.,It was a battery-powered drill.,True,Homonymy,N,4.0,drill
+examination,It was a multiple-choice examination.,It was a prostate examination.,False,Polysemy,N,2.0,examination
+examination,It was a multiple-choice examination.,It was a physical examination.,False,Polysemy,N,3.125,examination
+examination,It was a difficult examination.,It was a prostate examination.,False,Polysemy,N,1.764705882,examination
+examination,It was a difficult examination.,It was a physical examination.,False,Polysemy,N,2.625,examination
+examination,It was a multiple-choice examination.,It was a difficult examination.,True,Polysemy,N,3.526315789,examination
+examination,It was a prostate examination.,It was a physical examination.,True,Polysemy,N,4.0,examination
+fan,They had an electric fan.,They had a zealous fan.,False,Homonymy,N,0.266666667,fan
+fan,They had an electric fan.,They had an enthusiastic fan.,False,Homonymy,N,0.0,fan
+fan,They had a ceiling fan.,They had a zealous fan.,False,Homonymy,N,0.2,fan
+fan,They had a ceiling fan.,They had an enthusiastic fan.,False,Homonymy,N,0.071428571,fan
+fan,They had an electric fan.,They had a ceiling fan.,True,Homonymy,N,3.9,fan
+fan,They had a zealous fan.,They had an enthusiastic fan.,True,Homonymy,N,3.272727273,fan
+file,She had a text file.,She had a nail file.,False,Homonymy,N,0.214285714,file
+file,She had a text file.,She had a steel file.,False,Homonymy,N,0.384615385,file
+file,She had a data file.,She had a nail file.,False,Homonymy,N,0.083333333,file
+file,She had a data file.,She had a steel file.,False,Homonymy,N,0.25,file
+file,She had a text file.,She had a data file.,True,Homonymy,N,3.6,file
+file,She had a nail file.,She had a steel file.,True,Homonymy,N,1.8125,file
+film,It was an action film.,It was a transparent film.,False,Polysemy,N,1.222222222,film
+film,It was an action film.,It was a plastic film.,False,Polysemy,N,0.388888889,film
+film,It was a censored film.,It was a transparent film.,False,Polysemy,N,1.444444444,film
+film,It was a censored film.,It was a plastic film.,False,Polysemy,N,0.066666667,film
+film,It was an action film.,It was a censored film.,True,Polysemy,N,3.8,film
+film,It was a transparent film.,It was a plastic film.,True,Polysemy,N,3.4375,film
+fix,They fixed the radio.,They fixed the date.,False,Polysemy,V,1.833333333,fixed
+fix,They fixed the radio.,They fixed the price.,False,Polysemy,V,1.333333333,fixed
+fix,They fixed the dishwasher.,They fixed the date.,False,Polysemy,V,0.833333333,fixed
+fix,They fixed the dishwasher.,They fixed the price.,False,Polysemy,V,0.7,fixed
+fix,They fixed the radio.,They fixed the dishwasher.,True,Polysemy,V,3.904761905,fixed
+fix,They fixed the date.,They fixed the price.,True,Polysemy,V,2.615384615,fixed
+foundation,It was a charitable foundation.,It was a wooden foundation.,False,Polysemy,N,0.583333333,foundation
+foundation,It was a charitable foundation.,It was a concrete foundation.,False,Polysemy,N,1.0,foundation
+foundation,It was an educational foundation.,It was a wooden foundation.,False,Polysemy,N,0.75,foundation
+foundation,It was an educational foundation.,It was a concrete foundation.,False,Polysemy,N,1.555555556,foundation
+foundation,It was a charitable foundation.,It was an educational foundation.,True,Polysemy,N,3.066666667,foundation
+foundation,It was a wooden foundation.,It was a concrete foundation.,True,Polysemy,N,3.764705882,foundation
+function,It was a mathematical function.,It was a social function.,False,Polysemy,N,0.933333333,function
+function,It was a mathematical function.,It was a business function.,False,Polysemy,N,0.266666667,function
+function,It was a linear function.,It was a social function.,False,Polysemy,N,0.2,function
+function,It was a linear function.,It was a business function.,False,Polysemy,N,0.5,function
+function,It was a mathematical function.,It was a linear function.,True,Polysemy,N,3.75,function
+function,It was a social function.,It was a business function.,True,Polysemy,N,3.384615385,function
+ground,He was on the firm ground.,He was on the camp ground.,False,Polysemy,N,2.285714286,ground
+ground,He was on the firm ground.,He was on the parade ground.,False,Polysemy,N,1.846153846,ground
+ground,He was on the frozen ground.,He was on the camp ground.,False,Polysemy,N,2.923076923,ground
+ground,He was on the frozen ground.,He was on the parade ground.,False,Polysemy,N,3.5,ground
+ground,He was on the firm ground.,He was on the frozen ground.,True,Polysemy,N,3.615384615,ground
+ground,He was on the camp ground.,He was on the parade ground.,True,Polysemy,N,3.285714286,ground
+guard,They liked the night guard.,They liked the coast guard.,False,Polysemy,N,2.647058824,guard
+guard,They liked the night guard.,They liked the national guard.,False,Polysemy,N,1.777777778,guard
+guard,They liked the security guard.,They liked the coast guard.,False,Polysemy,N,3.615384615,guard
+guard,They liked the security guard.,They liked the national guard.,False,Polysemy,N,3.454545455,guard
+guard,They liked the night guard.,They liked the security guard.,True,Polysemy,N,3.454545455,guard
+guard,They liked the coast guard.,They liked the national guard.,True,Polysemy,N,3.8125,guard
+guide,He had an assembly guide.,He had a talkative guide.,False,Polysemy,N,2.333333333,guide
+guide,He had an assembly guide.,He had a friendly guide.,False,Polysemy,N,2.25,guide
+guide,He had a TV guide.,He had a talkative guide.,False,Polysemy,N,1.1875,guide
+guide,He had a TV guide.,He had a friendly guide.,False,Polysemy,N,1.0,guide
+guide,He had an assembly guide.,He had a TV guide.,True,Polysemy,N,2.272727273,guide
+guide,He had a talkative guide.,He had a friendly guide.,True,Polysemy,N,3.875,guide
+hail,They hailed a cab.,They hailed a friend.,False,Polysemy,V,2.4,hailed
+hail,They hailed a cab.,They hailed a guest.,False,Polysemy,V,1.727272727,hailed
+hail,They hailed a taxi.,They hailed a friend.,False,Polysemy,V,2.692307692,hailed
+hail,They hailed a taxi.,They hailed a guest.,False,Polysemy,V,2.1,hailed
+hail,They hailed a cab.,They hailed a taxi.,True,Polysemy,V,4.0,hailed
+hail,They hailed a friend.,They hailed a guest.,True,Polysemy,V,3.315789474,hailed
+home,It was a summer home.,It was a funeral home.,False,Polysemy,N,2.153846154,home
+home,It was a summer home.,It was a nursing home.,False,Polysemy,N,3.421052632,home
+home,It was a childhood home.,It was a funeral home.,False,Polysemy,N,2.076923077,home
+home,It was a childhood home.,It was a nursing home.,False,Polysemy,N,3.5,home
+home,It was a summer home.,It was a childhood home.,True,Polysemy,N,3.818181818,home
+home,It was a funeral home.,It was a nursing home.,True,Polysemy,N,2.846153846,home
+intelligence,They had natural intelligence.,They had classified intelligence.,False,Polysemy,N,1.8,intelligence
+intelligence,They had natural intelligence.,They had military intelligence.,False,Polysemy,N,3.333333333,intelligence
+intelligence,They had innate intelligence.,They had classified intelligence.,False,Polysemy,N,2.333333333,intelligence
+intelligence,They had innate intelligence.,They had military intelligence.,False,Polysemy,N,3.3125,intelligence
+intelligence,They had natural intelligence.,They had innate intelligence.,True,Polysemy,N,3.545454545,intelligence
+intelligence,They had classified intelligence.,They had military intelligence.,True,Polysemy,N,3.588235294,intelligence
+issue,It was a sensitive issue.,It was a weekly issue.,False,Polysemy,N,0.8,issue
+issue,It was a sensitive issue.,It was a special issue.,False,Polysemy,N,3.444444444,issue
+issue,It was a political issue.,It was a weekly issue.,False,Polysemy,N,1.75,issue
+issue,It was a political issue.,It was a special issue.,False,Polysemy,N,2.235294118,issue
+issue,It was a sensitive issue.,It was a political issue.,True,Polysemy,N,3.8,issue
+issue,It was a weekly issue.,It was a special issue.,True,Polysemy,N,2.642857143,issue
+jam,It was a blackberry jam.,It was a traffic jam.,False,Homonymy,N,0.071428571,jam
+jam,It was a blackberry jam.,It was a paper jam.,False,Homonymy,N,0.538461538,jam
+jam,It was a peach jam.,It was a traffic jam.,False,Homonymy,N,0.0,jam
+jam,It was a peach jam.,It was a paper jam.,False,Homonymy,N,0.066666667,jam
+jam,It was a blackberry jam.,It was a peach jam.,True,Homonymy,N,4.0,jam
+jam,It was a traffic jam.,It was a paper jam.,True,Homonymy,N,2.1,jam
+key,It was a duplicate key.,It was a delete key.,False,Polysemy,N,1.076923077,key
+key,It was a duplicate key.,It was a backspace key.,False,Polysemy,N,0.454545455,key
+key,It was a master key.,It was a delete key.,False,Polysemy,N,0.75,key
+key,It was a master key.,It was a backspace key.,False,Polysemy,N,0.916666667,key
+key,It was a duplicate key.,It was a master key.,True,Polysemy,N,3.909090909,key
+key,It was a delete key.,It was a backspace key.,True,Polysemy,N,3.666666667,key
+lamb,They liked the marinated lamb.,They liked the cute lamb.,False,Polysemy,N,3.3,lamb
+lamb,They liked the marinated lamb.,They liked the friendly lamb.,False,Polysemy,N,3.0,lamb
+lamb,They liked the grilled lamb.,They liked the cute lamb.,False,Polysemy,N,3.466666667,lamb
+lamb,They liked the grilled lamb.,They liked the friendly lamb.,False,Polysemy,N,3.294117647,lamb
+lamb,They liked the marinated lamb.,They liked the grilled lamb.,True,Polysemy,N,4.0,lamb
+lamb,They liked the cute lamb.,They liked the friendly lamb.,True,Polysemy,N,3.636363636,lamb
+lap,She lapped the milk.,She lapped the runners.,False,Homonymy,V,0.2,lapped
+lap,She lapped the milk.,She lapped the competitors.,False,Homonymy,V,0.333333333,lapped
+lap,She lapped the water.,She lapped the runners.,False,Homonymy,V,0.333333333,lapped
+lap,She lapped the water.,She lapped the competitors.,False,Homonymy,V,0.5,lapped
+lap,She lapped the milk.,She lapped the water.,True,Homonymy,V,3.625,lapped
+lap,She lapped the runners.,She lapped the competitors.,True,Homonymy,V,3.45,lapped
+load,She loaded the gun.,She loaded the truck.,False,Polysemy,V,2.142857143,loaded
+load,She loaded the gun.,She loaded the van.,False,Polysemy,V,2.466666667,loaded
+load,She loaded the rifle.,She loaded the truck.,False,Polysemy,V,2.538461538,loaded
+load,She loaded the rifle.,She loaded the van.,False,Polysemy,V,2.5,loaded
+load,She loaded the gun.,She loaded the rifle.,True,Polysemy,V,4.0,loaded
+load,She loaded the truck.,She loaded the van.,True,Polysemy,V,4.0,loaded
+lock,She had curly locks.,She had window locks.,False,Homonymy,N,0.0,locks
+lock,She had curly locks.,She had door locks.,False,Homonymy,N,0.0,locks
+lock,She had brown locks.,She had window locks.,False,Homonymy,N,0.210526316,locks
+lock,She had brown locks.,She had door locks.,False,Homonymy,N,0.333333333,locks
+lock,She had curly locks.,She had brown locks.,True,Homonymy,N,3.785714286,locks
+lock,She had window locks.,She had door locks.,True,Homonymy,N,3.555555556,locks
+lunch,They liked the hot lunch.,They liked the afternoon lunch.,False,Polysemy,N,3.785714286,lunch
+lunch,They liked the hot lunch.,They liked the women's lunch.,False,Polysemy,N,3.388888889,lunch
+lunch,They liked the sandwich lunch.,They liked the afternoon lunch.,False,Polysemy,N,3.857142857,lunch
+lunch,They liked the sandwich lunch.,They liked the women's lunch.,False,Polysemy,N,3.583333333,lunch
+lunch,They liked the hot lunch.,They liked the sandwich lunch.,True,Polysemy,N,3.933333333,lunch
+lunch,They liked the afternoon lunch.,They liked the women's lunch.,True,Polysemy,N,4.0,lunch
+market,He liked the flea market.,He liked the housing market.,False,Polysemy,N,2.555555556,market
+market,He liked the flea market.,He liked the stock market.,False,Polysemy,N,2.285714286,market
+market,He liked the fish market.,He liked the housing market.,False,Polysemy,N,2.263157895,market
+market,He liked the fish market.,He liked the stock market.,False,Polysemy,N,1.9,market
+market,He liked the flea market.,He liked the fish market.,True,Polysemy,N,3.923076923,market
+market,He liked the housing market.,He liked the stock market.,True,Polysemy,N,3.083333333,market
+match,It was a lit match.,It was a soccer match.,False,Homonymy,N,0.111111111,match
+match,It was a lit match.,It was a tennis match.,False,Homonymy,N,0.0,match
+match,It was a burning match.,It was a soccer match.,False,Homonymy,N,0.3125,match
+match,It was a burning match.,It was a tennis match.,False,Homonymy,N,0.555555556,match
+match,It was a lit match.,It was a burning match.,True,Homonymy,N,4.0,match
+match,It was a soccer match.,It was a tennis match.,True,Homonymy,N,3.666666667,match
+medicine,It was cough medicine.,It was orthopedic medicine.,False,Polysemy,N,2.666666667,medicine
+medicine,It was cough medicine.,It was veterinary medicine.,False,Polysemy,N,2.444444444,medicine
+medicine,It was prescription medicine.,It was orthopedic medicine.,False,Polysemy,N,3.222222222,medicine
+medicine,It was prescription medicine.,It was veterinary medicine.,False,Polysemy,N,3.5,medicine
+medicine,It was cough medicine.,It was prescription medicine.,True,Polysemy,N,3.5625,medicine
+medicine,It was orthopedic medicine.,It was veterinary medicine.,True,Polysemy,N,3.833333333,medicine
+message,There was a phone message.,There was an urgent message.,False,Polysemy,N,3.5,message
+message,There was a phone message.,There was a clear message.,False,Polysemy,N,2.125,message
+message,There was a computer message.,There was an urgent message.,False,Polysemy,N,3.0,message
+message,There was a computer message.,There was a clear message.,False,Polysemy,N,2.8125,message
+message,There was a phone message.,There was a computer message.,True,Polysemy,N,3.727272727,message
+message,There was an urgent message.,There was a clear message.,True,Polysemy,N,3.705882353,message
+mold,It was a fungal mold.,It was a rubber mold.,False,Homonymy,N,0.133333333,mold
+mold,It was a fungal mold.,It was a clay mold.,False,Homonymy,N,0.916666667,mold
+mold,It was a harmful mold.,It was a rubber mold.,False,Homonymy,N,0.111111111,mold
+mold,It was a harmful mold.,It was a clay mold.,False,Homonymy,N,0.357142857,mold
+mold,It was a fungal mold.,It was a harmful mold.,True,Homonymy,N,3.0625,mold
+mold,It was a rubber mold.,It was a clay mold.,True,Homonymy,N,3.727272727,mold
+mole,She saw the cancerous mole.,She saw the cute mole.,False,Homonymy,N,0.153846154,mole
+mole,She saw the cancerous mole.,She saw the fast mole.,False,Homonymy,N,0.166666667,mole
+mole,She saw the raised mole.,She saw the cute mole.,False,Homonymy,N,0.625,mole
+mole,She saw the raised mole.,She saw the fast mole.,False,Homonymy,N,1.15,mole
+mole,She saw the cancerous mole.,She saw the raised mole.,True,Homonymy,N,2.375,mole
+mole,She saw the cute mole.,She saw the fast mole.,True,Homonymy,N,2.375,mole
+movement,He liked the rhythmic movement.,He liked the feminist movement.,False,Polysemy,N,0.846153846,movement
+movement,He liked the rhythmic movement.,He liked the civil-rights movement.,False,Polysemy,N,0.538461538,movement
+movement,He liked the graceful movement.,He liked the feminist movement.,False,Polysemy,N,1.428571429,movement
+movement,He liked the graceful movement.,He liked the civil-rights movement.,False,Polysemy,N,0.833333333,movement
+movement,He liked the rhythmic movement.,He liked the graceful movement.,True,Polysemy,N,3.384615385,movement
+movement,He liked the feminist movement.,He liked the civil-rights movement.,True,Polysemy,N,4.0,movement
+newspaper,It was a national newspaper.,It was a faded newspaper.,False,Polysemy,N,3.9,newspaper
+newspaper,It was a national newspaper.,It was a shredded newspaper.,False,Polysemy,N,3.647058824,newspaper
+newspaper,It was a daily newspaper.,It was a faded newspaper.,False,Polysemy,N,4.0,newspaper
+newspaper,It was a daily newspaper.,It was a shredded newspaper.,False,Polysemy,N,3.777777778,newspaper
+newspaper,It was a national newspaper.,It was a daily newspaper.,True,Polysemy,N,4.0,newspaper
+newspaper,It was a faded newspaper.,It was a shredded newspaper.,True,Polysemy,N,3.833333333,newspaper
+orange,It was a juicy orange.,It was a bright orange.,False,Polysemy,N,2.0,orange
+orange,It was a juicy orange.,It was a reddish orange.,False,Polysemy,N,1.0,orange
+orange,It was a ripe orange.,It was a bright orange.,False,Polysemy,N,2.5,orange
+orange,It was a ripe orange.,It was a reddish orange.,False,Polysemy,N,1.916666667,orange
+orange,It was a juicy orange.,It was a ripe orange.,True,Polysemy,N,3.65,orange
+orange,It was a bright orange.,It was a reddish orange.,True,Polysemy,N,4.0,orange
+page,He saw the young page.,He saw the blank page.,False,Homonymy,N,0.166666667,page
+page,He saw the young page.,He saw the ripped page.,False,Homonymy,N,0.333333333,page
+page,He saw the loyal page.,He saw the blank page.,False,Homonymy,N,0.388888889,page
+page,He saw the loyal page.,He saw the ripped page.,False,Homonymy,N,0.545454545,page
+page,He saw the young page.,He saw the loyal page.,True,Homonymy,N,3.071428571,page
+page,He saw the blank page.,He saw the ripped page.,True,Homonymy,N,3.384615385,page
+palm,It was a calloused palm.,It was a tropical palm.,False,Homonymy,N,0.235294118,palm
+palm,It was a calloused palm.,It was a tree palm.,False,Homonymy,N,0.2,palm
+palm,It was a wrinkled palm.,It was a tropical palm.,False,Homonymy,N,0.285714286,palm
+palm,It was a wrinkled palm.,It was a tree palm.,False,Homonymy,N,0.25,palm
+palm,It was a calloused palm.,It was a wrinkled palm.,True,Homonymy,N,3.0,palm
+palm,It was a tropical palm.,It was a tree palm.,True,Homonymy,N,3.916666667,palm
+panel,It was a control panel.,It was an advisory panel.,False,Polysemy,N,0.8,panel
+panel,It was a control panel.,It was a consumer panel.,False,Polysemy,N,1.222222222,panel
+panel,It was an instrument panel.,It was an advisory panel.,False,Polysemy,N,1.5,panel
+panel,It was an instrument panel.,It was a consumer panel.,False,Polysemy,N,1.076923077,panel
+panel,It was a control panel.,It was an instrument panel.,True,Polysemy,N,1.8,panel
+panel,It was an advisory panel.,It was a consumer panel.,True,Polysemy,N,3.0,panel
+passage,It was a secret passage.,It was a literary passage.,False,Polysemy,N,0.1,passage
+passage,It was a secret passage.,It was a biblical passage.,False,Polysemy,N,0.428571429,passage
+passage,It was a narrow passage.,It was a literary passage.,False,Polysemy,N,0.888888889,passage
+passage,It was a narrow passage.,It was a biblical passage.,False,Polysemy,N,0.230769231,passage
+passage,It was a secret passage.,It was a narrow passage.,True,Polysemy,N,3.692307692,passage
+passage,It was a literary passage.,It was a biblical passage.,True,Polysemy,N,3.611111111,passage
+pen,She penned her animals.,She penned her memoirs.,False,Homonymy,V,0.4,penned
+pen,She penned her animals.,She penned her thoughts.,False,Homonymy,V,0.545454545,penned
+pen,She penned her livestock.,She penned her memoirs.,False,Homonymy,V,0.647058824,penned
+pen,She penned her livestock.,She penned her thoughts.,False,Homonymy,V,0.5,penned
+pen,She penned her animals.,She penned her livestock.,True,Homonymy,V,3.529411765,penned
+pen,She penned her memoirs.,She penned her thoughts.,True,Homonymy,V,3.3,penned
+perch,It was a tasty perch.,It was a lofty perch.,False,Homonymy,N,0.666666667,perch
+perch,It was a tasty perch.,It was a secure perch.,False,Homonymy,N,0.6,perch
+perch,It was a freshwater perch.,It was a lofty perch.,False,Homonymy,N,1.3125,perch
+perch,It was a freshwater perch.,It was a secure perch.,False,Homonymy,N,1.666666667,perch
+perch,It was a tasty perch.,It was a freshwater perch.,True,Homonymy,N,2.25,perch
+perch,It was a lofty perch.,It was a secure perch.,True,Homonymy,N,2.5,perch
+pick,He picked his coffee.,He picked his scab.,False,Polysemy,V,0.733333333,picked
+pick,He picked his coffee.,He picked his nose.,False,Polysemy,V,0.538461538,picked
+pick,He picked his dinner.,He picked his scab.,False,Polysemy,V,0.894736842,picked
+pick,He picked his dinner.,He picked his nose.,False,Polysemy,V,0.583333333,picked
+pick,He picked his coffee.,He picked his dinner.,True,Polysemy,V,3.428571429,picked
+pick,He picked his scab.,He picked his nose.,True,Polysemy,V,3.636363636,picked
+pitcher,He saw the fast pitcher.,He saw the glass pitcher.,False,Homonymy,N,0.071428571,pitcher
+pitcher,He saw the fast pitcher.,He saw the plastic pitcher.,False,Homonymy,N,0.307692308,pitcher
+pitcher,He saw the right-handed pitcher.,He saw the glass pitcher.,False,Homonymy,N,0.4,pitcher
+pitcher,He saw the right-handed pitcher.,He saw the plastic pitcher.,False,Homonymy,N,0.153846154,pitcher
+pitcher,He saw the fast pitcher.,He saw the right-handed pitcher.,True,Homonymy,N,3.785714286,pitcher
+pitcher,He saw the glass pitcher.,He saw the plastic pitcher.,True,Homonymy,N,3.5,pitcher
+poach,She poached the deer.,She poached the eggs.,False,Homonymy,V,0.833333333,poached
+poach,She poached the deer.,She poached the vegetables.,False,Homonymy,V,1.363636364,poached
+poach,She poached the bear.,She poached the eggs.,False,Homonymy,V,0.571428571,poached
+poach,She poached the bear.,She poached the vegetables.,False,Homonymy,V,0.5,poached
+poach,She poached the deer.,She poached the bear.,True,Homonymy,V,3.842105263,poached
+poach,She poached the eggs.,She poached the vegetables.,True,Homonymy,V,3.142857143,poached
+port,It was a windy port.,It was a delicious port.,False,Homonymy,N,0.2,port
+port,It was a windy port.,It was a sweet port.,False,Homonymy,N,1.5,port
+port,It was a seaside port.,It was a delicious port.,False,Homonymy,N,0.538461538,port
+port,It was a seaside port.,It was a sweet port.,False,Homonymy,N,1.4375,port
+port,It was a windy port.,It was a seaside port.,True,Homonymy,N,3.416666667,port
+port,It was a delicious port.,It was a sweet port.,True,Homonymy,N,3.0,port
+position,He was in a distinguished position.,He was in a fetal position.,False,Polysemy,N,1.071428571,position
+position,He was in a distinguished position.,He was in a yoga position.,False,Polysemy,N,1.0,position
+position,He was in a prominent position.,He was in a fetal position.,False,Polysemy,N,0.888888889,position
+position,He was in a prominent position.,He was in a yoga position.,False,Polysemy,N,0.923076923,position
+position,He was in a distinguished position.,He was in a prominent position.,True,Polysemy,N,3.666666667,position
+position,He was in a fetal position.,He was in a yoga position.,True,Polysemy,N,3.5,position
+post,It was a wooden post.,It was a teaching post.,False,Homonymy,N,1.0,post
+post,It was a wooden post.,It was a challenging post.,False,Homonymy,N,0.375,post
+post,It was a fence post.,It was a teaching post.,False,Homonymy,N,0.583333333,post
+post,It was a fence post.,It was a challenging post.,False,Homonymy,N,1.083333333,post
+post,It was a wooden post.,It was a fence post.,True,Homonymy,N,3.833333333,post
+post,It was a teaching post.,It was a challenging post.,True,Homonymy,N,1.363636364,post
+punch,He had the alcoholic punch.,He had the strongest punch.,False,Homonymy,N,0.428571429,punch
+punch,He had the alcoholic punch.,He had the quickest punch.,False,Homonymy,N,0.222222222,punch
+punch,He had the fruit punch.,He had the strongest punch.,False,Homonymy,N,0.1,punch
+punch,He had the fruit punch.,He had the quickest punch.,False,Homonymy,N,0.142857143,punch
+punch,He had the alcoholic punch.,He had the fruit punch.,True,Homonymy,N,3.833333333,punch
+punch,He had the strongest punch.,He had the quickest punch.,True,Homonymy,N,3.777777778,punch
+pupil,She had a brilliant pupil.,She had a dilated pupil.,False,Homonymy,N,0.714285714,pupil
+pupil,She had a brilliant pupil.,She had a cloudy pupil.,False,Homonymy,N,0.25,pupil
+pupil,She had an interested pupil.,She had a dilated pupil.,False,Homonymy,N,0.071428571,pupil
+pupil,She had an interested pupil.,She had a cloudy pupil.,False,Homonymy,N,0.153846154,pupil
+pupil,She had a brilliant pupil.,She had an interested pupil.,True,Homonymy,N,3.692307692,pupil
+pupil,She had a dilated pupil.,She had a cloudy pupil.,True,Homonymy,N,2.333333333,pupil
+push,He pushed the cocaine.,He pushed the bed.,False,Polysemy,V,2.2,pushed
+push,He pushed the cocaine.,He pushed the desk.,False,Polysemy,V,1.071428571,pushed
+push,He pushed the drugs.,He pushed the bed.,False,Polysemy,V,0.846153846,pushed
+push,He pushed the drugs.,He pushed the desk.,False,Polysemy,V,0.842105263,pushed
+push,He pushed the cocaine.,He pushed the drugs.,True,Polysemy,V,3.857142857,pushed
+push,He pushed the bed.,He pushed the desk.,True,Polysemy,V,4.0,pushed
+racket,That was a loud racket.,That was a badminton racket.,False,Homonymy,N,0.125,racket
+racket,That was a loud racket.,That was a tennis racket.,False,Homonymy,N,0.176470588,racket
+racket,That was an annoying racket.,That was a badminton racket.,False,Homonymy,N,0.166666667,racket
+racket,That was an annoying racket.,That was a tennis racket.,False,Homonymy,N,0.0,racket
+racket,That was a loud racket.,That was an annoying racket.,True,Homonymy,N,3.384615385,racket
+racket,That was a badminton racket.,That was a tennis racket.,True,Homonymy,N,3.666666667,racket
+rock,He liked electronic rock.,He liked limestone rock.,False,Homonymy,N,0.666666667,rock
+rock,He liked electronic rock.,He liked granite rock.,False,Homonymy,N,0.181818182,rock
+rock,He liked alternative rock.,He liked limestone rock.,False,Homonymy,N,0.357142857,rock
+rock,He liked alternative rock.,He liked granite rock.,False,Homonymy,N,0.166666667,rock
+rock,He liked electronic rock.,He liked alternative rock.,True,Homonymy,N,3.727272727,rock
+rock,He liked limestone rock.,He liked granite rock.,True,Homonymy,N,4.0,rock
+run,She ran the marathon.,She ran the shop.,False,Polysemy,V,0.583333333,ran
+run,She ran the marathon.,She ran the company.,False,Polysemy,V,0.625,ran
+run,She ran the race.,She ran the shop.,False,Polysemy,V,0.545454545,ran
+run,She ran the race.,She ran the company.,False,Polysemy,V,0.625,ran
+run,She ran the marathon.,She ran the race.,True,Polysemy,V,4.0,ran
+run,She ran the shop.,She ran the company.,True,Polysemy,V,4.0,ran
+sage,He saw the wise sage.,He saw the fragrant sage.,False,Homonymy,N,0.333333333,sage
+sage,He saw the wise sage.,He saw the bushy sage.,False,Homonymy,N,0.666666667,sage
+sage,He saw the renowned sage.,He saw the fragrant sage.,False,Homonymy,N,0.45,sage
+sage,He saw the renowned sage.,He saw the bushy sage.,False,Homonymy,N,0.818181818,sage
+sage,He saw the wise sage.,He saw the renowned sage.,True,Homonymy,N,3.230769231,sage
+sage,He saw the fragrant sage.,He saw the bushy sage.,True,Homonymy,N,2.5,sage
+scale,It was a fish scale.,It was a music scale.,False,Homonymy,N,0.133333333,scale
+scale,It was a fish scale.,It was a major scale.,False,Homonymy,N,0.428571429,scale
+scale,It was a lizard scale.,It was a music scale.,False,Homonymy,N,0.222222222,scale
+scale,It was a lizard scale.,It was a major scale.,False,Homonymy,N,0.307692308,scale
+scale,It was a fish scale.,It was a lizard scale.,True,Homonymy,N,3.5,scale
+scale,It was a music scale.,It was a major scale.,True,Homonymy,N,2.5,scale
+scene,It was a touching scene.,It was a nature scene.,False,Polysemy,N,2.611111111,scene
+scene,It was a touching scene.,It was a panoramic scene.,False,Polysemy,N,2.333333333,scene
+scene,It was a well-acted scene.,It was a nature scene.,False,Polysemy,N,1.636363636,scene
+scene,It was a well-acted scene.,It was a panoramic scene.,False,Polysemy,N,2.090909091,scene
+scene,It was a touching scene.,It was a well-acted scene.,True,Polysemy,N,3.857142857,scene
+scene,It was a nature scene.,It was a panoramic scene.,True,Polysemy,N,3.714285714,scene
+seal,It was a gold seal.,It was a circus seal.,False,Homonymy,N,0.2,seal
+seal,It was a gold seal.,It was a trained seal.,False,Homonymy,N,0.7,seal
+seal,It was a certified seal.,It was a circus seal.,False,Homonymy,N,0.090909091,seal
+seal,It was a certified seal.,It was a trained seal.,False,Homonymy,N,0.8,seal
+seal,It was a gold seal.,It was a certified seal.,True,Homonymy,N,3.411764706,seal
+seal,It was a circus seal.,It was a trained seal.,True,Homonymy,N,3.625,seal
+serve,She served a pie.,She served a summons.,False,Polysemy,V,1.777777778,served
+serve,She served a pie.,She served a warrant.,False,Polysemy,V,1.0,served
+serve,She served a lasagna.,She served a summons.,False,Polysemy,V,1.4375,served
+serve,She served a lasagna.,She served a warrant.,False,Polysemy,V,1.714285714,served
+serve,She served a pie.,She served a lasagna.,True,Polysemy,V,4.0,served
+serve,She served a summons.,She served a warrant.,True,Polysemy,V,2.928571429,served
+sing,The girl sang.,The bird sang.,False,Polysemy,V,3.705882353,sang
+sing,The girl sang.,The cricket sang.,False,Polysemy,V,2.916666667,sang
+sing,The choir sang.,The bird sang.,False,Polysemy,V,3.444444444,sang
+sing,The choir sang.,The cricket sang.,False,Polysemy,V,2.875,sang
+sing,The girl sang.,The choir sang.,True,Polysemy,V,4.0,sang
+sing,The bird sang.,The cricket sang.,True,Polysemy,V,3.777777778,sang
+spill,He spilled the drink.,He spilled the news.,False,Polysemy,V,1.111111111,spilled
+spill,He spilled the drink.,He spilled the secret.,False,Polysemy,V,1.631578947,spilled
+spill,He spilled the flour.,He spilled the news.,False,Polysemy,V,1.3125,spilled
+spill,He spilled the flour.,He spilled the secret.,False,Polysemy,V,1.307692308,spilled
+spill,He spilled the drink.,He spilled the flour.,True,Polysemy,V,3.545454545,spilled
+spill,He spilled the news.,He spilled the secret.,True,Polysemy,V,3.888888889,spilled
+stake,He staked his horse.,He staked his name.,False,Polysemy,V,0.666666667,staked
+stake,He staked his horse.,He staked his claim.,False,Polysemy,V,1.357142857,staked
+stake,He staked his tent.,He staked his name.,False,Polysemy,V,0.777777778,staked
+stake,He staked his tent.,He staked his claim.,False,Polysemy,V,0.733333333,staked
+stake,He staked his horse.,He staked his tent.,True,Polysemy,V,2.461538462,staked
+stake,He staked his name.,He staked his claim.,True,Polysemy,V,2.181818182,staked
+stall,They stalled the truck.,They stalled the horse.,False,Polysemy,V,2.0625,stalled
+stall,They stalled the truck.,They stalled the pig.,False,Polysemy,V,0.9,stalled
+stall,They stalled the bus.,They stalled the horse.,False,Polysemy,V,1.818181818,stalled
+stall,They stalled the bus.,They stalled the pig.,False,Polysemy,V,0.846153846,stalled
+stall,They stalled the truck.,They stalled the bus.,True,Polysemy,V,3.2,stalled
+stall,They stalled the horse.,They stalled the pig.,True,Polysemy,V,3.176470588,stalled
+stay,They stayed wet.,They stayed nearby.,False,Polysemy,V,2.428571429,stayed
+stay,They stayed wet.,They stayed overnight.,False,Polysemy,V,2.066666667,stayed
+stay,They stayed cold.,They stayed nearby.,False,Polysemy,V,2.923076923,stayed
+stay,They stayed cold.,They stayed overnight.,False,Polysemy,V,2.0,stayed
+stay,They stayed wet.,They stayed cold.,True,Polysemy,V,3.857142857,stayed
+stay,They stayed nearby.,They stayed overnight.,True,Polysemy,V,3.555555556,stayed
+tap,He tapped the keg.,He tapped the stick.,False,Homonymy,V,1.25,tapped
+tap,He tapped the keg.,He tapped the drums.,False,Homonymy,V,1.3125,tapped
+tap,He tapped the beer.,He tapped the stick.,False,Homonymy,V,1.421052632,tapped
+tap,He tapped the beer.,He tapped the drums.,False,Homonymy,V,1.714285714,tapped
+tap,He tapped the keg.,He tapped the beer.,True,Homonymy,V,2.5,tapped
+tap,He tapped the stick.,He tapped the drums.,True,Homonymy,V,3.0,tapped
+tape,He used the scotch tape.,He used the interview tape.,False,Polysemy,N,0.4,tape
+tape,He used the scotch tape.,He used the video tape.,False,Polysemy,N,1.090909091,tape
+tape,He used the double-sided tape.,He used the interview tape.,False,Polysemy,N,0.533333333,tape
+tape,He used the double-sided tape.,He used the video tape.,False,Polysemy,N,0.571428571,tape
+tape,He used the scotch tape.,He used the double-sided tape.,True,Polysemy,N,4.0,tape
+tape,He used the interview tape.,He used the video tape.,True,Polysemy,N,3.444444444,tape
+term,It was a winter term.,It was a legal term.,False,Polysemy,N,0.8,term
+term,It was a winter term.,It was a technical term.,False,Polysemy,N,1.2,term
+term,It was a fall term.,It was a legal term.,False,Polysemy,N,0.882352941,term
+term,It was a fall term.,It was a technical term.,False,Polysemy,N,0.545454545,term
+term,It was a winter term.,It was a fall term.,True,Polysemy,N,3.916666667,term
+term,It was a legal term.,It was a technical term.,True,Polysemy,N,3.428571429,term
+tick,It was a clock tick.,It was a parasitic tick.,False,Homonymy,N,0.125,tick
+tick,It was a clock tick.,It was a diseased tick.,False,Homonymy,N,0.166666667,tick
+tick,It was an audible tick.,It was a parasitic tick.,False,Homonymy,N,0.555555556,tick
+tick,It was an audible tick.,It was a diseased tick.,False,Homonymy,N,0.0,tick
+tick,It was a clock tick.,It was an audible tick.,True,Homonymy,N,2.555555556,tick
+tick,It was a parasitic tick.,It was a diseased tick.,True,Homonymy,N,3.75,tick
+tip,It was a generous tip.,It was a pencil tip.,False,Homonymy,N,0.125,tip
+tip,It was a generous tip.,It was a finger tip.,False,Homonymy,N,0.1,tip
+tip,It was a stingy tip.,It was a pencil tip.,False,Homonymy,N,0.666666667,tip
+tip,It was a stingy tip.,It was a finger tip.,False,Homonymy,N,0.294117647,tip
+tip,It was a generous tip.,It was a stingy tip.,True,Homonymy,N,3.933333333,tip
+tip,It was a pencil tip.,It was a finger tip.,True,Homonymy,N,2.555555556,tip
+title,She liked the essay title.,She liked the academic title.,False,Polysemy,N,1.571428571,title
+title,She liked the essay title.,She liked the professional title.,False,Polysemy,N,1.8125,title
+title,She liked the poem title.,She liked the academic title.,False,Polysemy,N,3.142857143,title
+title,She liked the poem title.,She liked the professional title.,False,Polysemy,N,2.076923077,title
+title,She liked the essay title.,She liked the poem title.,True,Polysemy,N,4.0,title
+title,She liked the academic title.,She liked the professional title.,True,Polysemy,N,3.8,title
+toast,They toasted the bread.,They toasted the host.,False,Homonymy,V,0.166666667,toasted
+toast,They toasted the bread.,They toasted the bride.,False,Homonymy,V,0.285714286,toasted
+toast,They toasted the strudel.,They toasted the host.,False,Homonymy,V,0.461538462,toasted
+toast,They toasted the strudel.,They toasted the bride.,False,Homonymy,V,0.1,toasted
+toast,They toasted the bread.,They toasted the strudel.,True,Homonymy,V,3.583333333,toasted
+toast,They toasted the host.,They toasted the bride.,True,Homonymy,V,3.5625,toasted
+toll,It was a costly toll.,It was a loud toll.,False,Homonymy,N,1.777777778,toll
+toll,It was a costly toll.,It was a bell toll.,False,Homonymy,N,0.857142857,toll
+toll,It was a road toll.,It was a loud toll.,False,Homonymy,N,0.357142857,toll
+toll,It was a road toll.,It was a bell toll.,False,Homonymy,N,0.636363636,toll
+toll,It was a costly toll.,It was a road toll.,True,Homonymy,N,2.266666667,toll
+toll,It was a loud toll.,It was a bell toll.,True,Homonymy,N,2.357142857,toll
+track,She saw the train tracks.,She saw the moose tracks.,False,Polysemy,N,2.076923077,tracks
+track,She saw the train tracks.,She saw the snowshoe tracks.,False,Polysemy,N,2.75,tracks
+track,She saw the trolley tracks.,She saw the moose tracks.,False,Polysemy,N,1.666666667,tracks
+track,She saw the trolley tracks.,She saw the snowshoe tracks.,False,Polysemy,N,2.384615385,tracks
+track,She saw the train tracks.,She saw the trolley tracks.,True,Polysemy,N,3.333333333,tracks
+track,She saw the moose tracks.,She saw the snowshoe tracks.,True,Polysemy,N,3.777777778,tracks
+yard,It was five yards.,They were big yards.,False,Homonymy,N,0.75,yards
+yard,It was five yards.,They were cluttered yards.,False,Homonymy,N,0.555555556,yards
+yard,It was ten yards.,They were big yards.,False,Homonymy,N,1.2,yards
+yard,It was ten yards.,They were cluttered yards.,False,Homonymy,N,0.416666667,yards
+yard,It was five yards.,It was ten yards.,True,Homonymy,N,4.0,yards
+yard,They were big yards.,They were cluttered yards.,True,Homonymy,N,3.230769231,yards
