@@ -31,8 +31,8 @@ MODELS = [
          # 'EleutherAI/pythia-1b',
          'EleutherAI/pythia-1.4b',
          'EleutherAI/pythia-2.8b',
-         # 'EleutherAI/pythia-6.9b',
-         # 'EleutherAI/pythia-12b',
+         'EleutherAI/pythia-6.9b',
+         'EleutherAI/pythia-12b',
           ]
 
 
@@ -100,8 +100,6 @@ def main(model_name):
         full_context = row['sentence_text'] + " " + row['explicit_text']
         target_word = " " + row['last_word']
         ablated_context = full_context.replace(target_word, "").rstrip('.').strip()
-        print(ablated_context)
-        print(target_word)
 
         prob = next_seq_prob(
             model = model,
