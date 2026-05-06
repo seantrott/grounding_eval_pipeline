@@ -1,0 +1,385 @@
+item,object,implicit_sentence,sentence_text,explicit_sentence,explicit_text,match,dataset,last_word,log_prob,model,checkpoint,n_params
+1,axe,a,The lumberjack left his axe sticking in the top of the stump after winning the axe toss.,a,The axe was horizontal.,match,muraki2021,horizontal,-16.098067345209348,EleutherAI/pythia-14m,256,14067712
+1,axe,a,The lumberjack left his axe sticking in the top of the stump after winning the axe toss.,b,The axe was vertical.,mismatch,muraki2021,vertical,-15.054915483959867,EleutherAI/pythia-14m,256,14067712
+2,bat,a,Derek swung his bat as the ball approached.,a,The bat was horizontal.,match,muraki2021,horizontal,-16.05894746688101,EleutherAI/pythia-14m,256,14067712
+2,bat,a,Derek swung his bat as the ball approached.,b,The bat was vertical.,mismatch,muraki2021,vertical,-15.24849230751976,EleutherAI/pythia-14m,256,14067712
+3,book,a,The librarian put the book back on the table.,a,The book was horizontal.,match,muraki2021,horizontal,-16.014796039180162,EleutherAI/pythia-14m,256,14067712
+3,book,a,The librarian put the book back on the table.,b,The book was vertical.,mismatch,muraki2021,vertical,-15.023078019526862,EleutherAI/pythia-14m,256,14067712
+4,bottle,a,"Jessica stuck the bottle in the wine rack, anticipating a romantic evening.",a,The bottle was horizontal.,match,muraki2021,horizontal,-15.994745706695653,EleutherAI/pythia-14m,256,14067712
+4,bottle,a,"Jessica stuck the bottle in the wine rack, anticipating a romantic evening.",b,The bottle was vertical.,mismatch,muraki2021,vertical,-15.368655838020384,EleutherAI/pythia-14m,256,14067712
+5,bowl,a,James placed the bowl into an open space in the cabinet.,a,The bowl was horizontal.,match,muraki2021,horizontal,-16.18382608622327,EleutherAI/pythia-14m,256,14067712
+5,bowl,a,James placed the bowl into an open space in the cabinet.,b,The bowl was vertical.,mismatch,muraki2021,vertical,-14.988555012306929,EleutherAI/pythia-14m,256,14067712
+6,broom,a,"Janie grabbed the broom and rode it around the house, pretending it was her horse.",a,The broom was horizontal.,match,muraki2021,horizontal,-16.008264865252215,EleutherAI/pythia-14m,256,14067712
+6,broom,a,"Janie grabbed the broom and rode it around the house, pretending it was her horse.",b,The broom was vertical.,mismatch,muraki2021,vertical,-15.209177048218798,EleutherAI/pythia-14m,256,14067712
+7,brush,a,"The teenager placed her brush in the bottom of her bag, looking forward to the party.",a,The brush was horizontal.,match,muraki2021,horizontal,-16.096031020933605,EleutherAI/pythia-14m,256,14067712
+7,brush,a,"The teenager placed her brush in the bottom of her bag, looking forward to the party.",b,The brush was vertical.,mismatch,muraki2021,vertical,-14.994901821760294,EleutherAI/pythia-14m,256,14067712
+8,crayon,a,The toddler drew a kitty cat with his crayon on his bedroom door.,a,The crayon was horizontal.,match,muraki2021,horizontal,-15.983364433075185,EleutherAI/pythia-14m,256,14067712
+8,crayon,a,The toddler drew a kitty cat with his crayon on his bedroom door.,b,The crayon was vertical.,mismatch,muraki2021,vertical,-15.288912300702256,EleutherAI/pythia-14m,256,14067712
+9,decoration,a,Laura threw the decoration in the drawer with the clothespin.,a,The decoration was horizontal.,match,muraki2021,horizontal,-15.846634140727131,EleutherAI/pythia-14m,256,14067712
+9,decoration,a,Laura threw the decoration in the drawer with the clothespin.,b,The decoration was vertical.,mismatch,muraki2021,vertical,-15.09738006337583,EleutherAI/pythia-14m,256,14067712
+10,flashlight,a,The hunter shone the flashlight into the mouth of the cavern.,a,The flashlight was horizontal.,match,muraki2021,horizontal,-15.959347400390312,EleutherAI/pythia-14m,256,14067712
+10,flashlight,a,The hunter shone the flashlight into the mouth of the cavern.,b,The flashlight was vertical.,mismatch,muraki2021,vertical,-15.123112801079033,EleutherAI/pythia-14m,256,14067712
+11,fire extinguisher,a,The race car driver fastened the fire-extinguisher under his seat.,a,The fire extinguisher was horizontal.,match,muraki2021,horizontal,-15.905449488306466,EleutherAI/pythia-14m,256,14067712
+11,fire extinguisher,a,The race car driver fastened the fire-extinguisher under his seat.,b,The fire extinguisher was vertical.,mismatch,muraki2021,vertical,-15.076012932138331,EleutherAI/pythia-14m,256,14067712
+12,glass,a,The waiter knocked over the wineglass while admiring Maureen's gown.,a,The glass was horizontal.,match,muraki2021,horizontal,-16.007677316864864,EleutherAI/pythia-14m,256,14067712
+12,glass,a,The waiter knocked over the wineglass while admiring Maureen's gown.,b,The glass was vertical.,mismatch,muraki2021,vertical,-15.303317567113499,EleutherAI/pythia-14m,256,14067712
+13,guitar,a,Mick strummed his guitar as he warmed up for the concert.,a,The guitar was horizontal.,match,muraki2021,horizontal,-16.10440179111479,EleutherAI/pythia-14m,256,14067712
+13,guitar,a,Mick strummed his guitar as he warmed up for the concert.,b,The guitar was vertical.,mismatch,muraki2021,vertical,-15.237244599131738,EleutherAI/pythia-14m,256,14067712
+14,gun,a,Annie raised the gun to fire at the target.,a,The gun was horizontal.,match,muraki2021,horizontal,-15.961859822309634,EleutherAI/pythia-14m,256,14067712
+14,gun,a,Annie raised the gun to fire at the target.,b,The gun was vertical.,mismatch,muraki2021,vertical,-15.30626187331886,EleutherAI/pythia-14m,256,14067712
+15,iron,a,"Frank pressed the iron onto his pants, hoping he wouldn't be late.",a,The iron was horizontal.,match,muraki2021,horizontal,-15.906660296974627,EleutherAI/pythia-14m,256,14067712
+15,iron,a,"Frank pressed the iron onto his pants, hoping he wouldn't be late.",b,The iron was vertical.,mismatch,muraki2021,vertical,-15.31075965073021,EleutherAI/pythia-14m,256,14067712
+16,key,a,The lab assistant put the key to the monkey cage in the lock.,a,The key was horizontal.,match,muraki2021,horizontal,-16.032880361289617,EleutherAI/pythia-14m,256,14067712
+16,key,a,The lab assistant put the key to the monkey cage in the lock.,b,The key was vertical.,mismatch,muraki2021,vertical,-14.962329723875314,EleutherAI/pythia-14m,256,14067712
+17,nail,a,The carpenter hammered the nail into the wall.,a,The nail was horizontal.,match,muraki2021,horizontal,-15.955386426624516,EleutherAI/pythia-14m,256,14067712
+17,nail,a,The carpenter hammered the nail into the wall.,b,The nail was vertical.,mismatch,muraki2021,vertical,-15.140956282659788,EleutherAI/pythia-14m,256,14067712
+18,pen,a,The accountant stuck his pen behind his ear.,a,The pen was horizontal.,match,muraki2021,horizontal,-15.892563242420165,EleutherAI/pythia-14m,256,14067712
+18,pen,a,The accountant stuck his pen behind his ear.,b,The pen was vertical.,mismatch,muraki2021,vertical,-15.122109766395623,EleutherAI/pythia-14m,256,14067712
+19,pencil,a,Rick hurriedly stuck his pencil in the desk drawer.,a,The pencil was horizontal.,match,muraki2021,horizontal,-16.051907120057415,EleutherAI/pythia-14m,256,14067712
+19,pencil,a,Rick hurriedly stuck his pencil in the desk drawer.,b,The pencil was vertical.,mismatch,muraki2021,vertical,-15.115416193533283,EleutherAI/pythia-14m,256,14067712
+20,plate,a,Sara situated the expensive plate on its mat on the table.,a,The plate was horizontal.,match,muraki2021,horizontal,-15.97887650195509,EleutherAI/pythia-14m,256,14067712
+20,plate,a,Sara situated the expensive plate on its mat on the table.,b,The plate was vertical.,mismatch,muraki2021,vertical,-15.033392898841342,EleutherAI/pythia-14m,256,14067712
+21,salt shaker,a,The anxious little boy knocked the salt shaker over onto the table.,a,The salt shaker was horizontal.,match,muraki2021,horizontal,-15.858472040784031,EleutherAI/pythia-14m,256,14067712
+21,salt shaker,a,The anxious little boy knocked the salt shaker over onto the table.,b,The salt shaker was vertical.,mismatch,muraki2021,vertical,-15.12952982509734,EleutherAI/pythia-14m,256,14067712
+22,pair of scissors,a,Becca used the scissors to carve her initials into the tree.,a,The pair of scissors was horizontal.,match,muraki2021,horizontal,-16.169782692817673,EleutherAI/pythia-14m,256,14067712
+22,pair of scissors,a,Becca used the scissors to carve her initials into the tree.,b,The pair of scissors was vertical.,mismatch,muraki2021,vertical,-15.009227249355636,EleutherAI/pythia-14m,256,14067712
+23,screw,a,Jim prepared to insert the screw into the side of the cabinet.,a,The screw was horizontal.,match,muraki2021,horizontal,-16.01895800892525,EleutherAI/pythia-14m,256,14067712
+23,screw,a,Jim prepared to insert the screw into the side of the cabinet.,b,The screw was vertical.,mismatch,muraki2021,vertical,-14.925353329838504,EleutherAI/pythia-14m,256,14067712
+24,wheel,a,The young husband prepared to place the spare tire into the trunk.,a,The wheel was horizontal.,match,muraki2021,horizontal,-15.975793176953415,EleutherAI/pythia-14m,256,14067712
+24,wheel,a,The young husband prepared to place the spare tire into the trunk.,b,The wheel was vertical.,mismatch,muraki2021,vertical,-15.151287670160244,EleutherAI/pythia-14m,256,14067712
+1,axe,b,The lumberjack left his axe sticking in the side of the stump after winning the axe toss.,a,The axe was horizontal.,mismatch,muraki2021,horizontal,-16.128307350762054,EleutherAI/pythia-14m,256,14067712
+1,axe,b,The lumberjack left his axe sticking in the side of the stump after winning the axe toss.,b,The axe was vertical.,match,muraki2021,vertical,-15.029822560892281,EleutherAI/pythia-14m,256,14067712
+2,bat,b,Derek held his bat high as the ball approached.,a,The bat was horizontal.,mismatch,muraki2021,horizontal,-16.110492694489896,EleutherAI/pythia-14m,256,14067712
+2,bat,b,Derek held his bat high as the ball approached.,b,The bat was vertical.,match,muraki2021,vertical,-15.23377744654967,EleutherAI/pythia-14m,256,14067712
+3,book,b,The librarian put the book back on the shelf.,a,The book was horizontal.,mismatch,muraki2021,horizontal,-16.011429286705255,EleutherAI/pythia-14m,256,14067712
+3,book,b,The librarian put the book back on the shelf.,b,The book was vertical.,match,muraki2021,vertical,-15.022145212097069,EleutherAI/pythia-14m,256,14067712
+4,bottle,b,"Jessica stuck the bottle in the ice, anticipating a romantic evening.",a,The bottle was horizontal.,mismatch,muraki2021,horizontal,-16.03538168390362,EleutherAI/pythia-14m,256,14067712
+4,bottle,b,"Jessica stuck the bottle in the ice, anticipating a romantic evening.",b,The bottle was vertical.,match,muraki2021,vertical,-15.380807439584268,EleutherAI/pythia-14m,256,14067712
+5,bowl,b,James placed the bowl into an open slot in the dishwasher.,a,The bowl was horizontal.,mismatch,muraki2021,horizontal,-16.24363476464477,EleutherAI/pythia-14m,256,14067712
+5,bowl,b,James placed the bowl into an open slot in the dishwasher.,b,The bowl was vertical.,match,muraki2021,vertical,-14.990692975013495,EleutherAI/pythia-14m,256,14067712
+6,broom,b,"Janie grabbed the broom and swept the house, pretending she was Cinderella.",a,The broom was horizontal.,mismatch,muraki2021,horizontal,-16.030804182193496,EleutherAI/pythia-14m,256,14067712
+6,broom,b,"Janie grabbed the broom and swept the house, pretending she was Cinderella.",b,The broom was vertical.,match,muraki2021,vertical,-15.191805457320271,EleutherAI/pythia-14m,256,14067712
+7,brush,b,"The teenager held her brush up like a microphone, pretending to be a famous rock star.",a,The brush was horizontal.,mismatch,muraki2021,horizontal,-16.049412689998487,EleutherAI/pythia-14m,256,14067712
+7,brush,b,"The teenager held her brush up like a microphone, pretending to be a famous rock star.",b,The brush was vertical.,match,muraki2021,vertical,-15.198029818029426,EleutherAI/pythia-14m,256,14067712
+8,crayon,b,The toddler drew a kitty cat with his crayon on his bedroom floor.,a,The crayon was horizontal.,mismatch,muraki2021,horizontal,-15.973257407218567,EleutherAI/pythia-14m,256,14067712
+8,crayon,b,The toddler drew a kitty cat with his crayon on his bedroom floor.,b,The crayon was vertical.,match,muraki2021,vertical,-15.304543463053717,EleutherAI/pythia-14m,256,14067712
+9,decoration,b,Laura hung the decoration on the line with the clothespin.,a,The decoration was horizontal.,mismatch,muraki2021,horizontal,-15.854168425488657,EleutherAI/pythia-14m,256,14067712
+9,decoration,b,Laura hung the decoration on the line with the clothespin.,b,The decoration was vertical.,match,muraki2021,vertical,-15.072405392256202,EleutherAI/pythia-14m,256,14067712
+10,flashlight,b,The hunter shone the flashlight onto the floor of the cavern.,a,The flashlight was horizontal.,mismatch,muraki2021,horizontal,-15.930235579451569,EleutherAI/pythia-14m,256,14067712
+10,flashlight,b,The hunter shone the flashlight onto the floor of the cavern.,b,The flashlight was vertical.,match,muraki2021,vertical,-15.135313955182932,EleutherAI/pythia-14m,256,14067712
+11,fire extinguisher,b,The race car driver fastened the fire-extinguisher onto the garage wall.,a,The fire extinguisher was horizontal.,mismatch,muraki2021,horizontal,-15.924249284385837,EleutherAI/pythia-14m,256,14067712
+11,fire extinguisher,b,The race car driver fastened the fire-extinguisher onto the garage wall.,b,The fire extinguisher was vertical.,match,muraki2021,vertical,-15.099713496143703,EleutherAI/pythia-14m,256,14067712
+12,glass,b,The waiter filled the wineglass while admiring Maureen's gown.,a,The glass was horizontal.,mismatch,muraki2021,horizontal,-15.939568092924771,EleutherAI/pythia-14m,256,14067712
+12,glass,b,The waiter filled the wineglass while admiring Maureen's gown.,b,The glass was vertical.,match,muraki2021,vertical,-15.322477770149645,EleutherAI/pythia-14m,256,14067712
+13,guitar,b,Mick set his guitar on the rack as he warmed up for the concert.,a,The guitar was horizontal.,mismatch,muraki2021,horizontal,-15.986094159178746,EleutherAI/pythia-14m,256,14067712
+13,guitar,b,Mick set his guitar on the rack as he warmed up for the concert.,b,The guitar was vertical.,match,muraki2021,vertical,-15.199709704520146,EleutherAI/pythia-14m,256,14067712
+14,gun,b,Annie lowered the gun to place it in the holster.,a,The gun was horizontal.,mismatch,muraki2021,horizontal,-16.012919397139868,EleutherAI/pythia-14m,256,14067712
+14,gun,b,Annie lowered the gun to place it in the holster.,b,The gun was vertical.,match,muraki2021,vertical,-15.205259913064516,EleutherAI/pythia-14m,256,14067712
+15,iron,b,"Frank placed the iron onto the shelf, hoping he wouldn't be late.",a,The iron was horizontal.,mismatch,muraki2021,horizontal,-15.964460188041924,EleutherAI/pythia-14m,256,14067712
+15,iron,b,"Frank placed the iron onto the shelf, hoping he wouldn't be late.",b,The iron was vertical.,match,muraki2021,vertical,-15.231701268695414,EleutherAI/pythia-14m,256,14067712
+16,key,b,The lab assistant put the key to the monkey cage on the hook.,a,The key was horizontal.,mismatch,muraki2021,horizontal,-15.99234612898935,EleutherAI/pythia-14m,256,14067712
+16,key,b,The lab assistant put the key to the monkey cage on the hook.,b,The key was vertical.,match,muraki2021,vertical,-14.98300881405,EleutherAI/pythia-14m,256,14067712
+17,nail,b,The carpenter hammered the nail into the floor plank.,a,The nail was horizontal.,mismatch,muraki2021,horizontal,-15.963265962593308,EleutherAI/pythia-14m,256,14067712
+17,nail,b,The carpenter hammered the nail into the floor plank.,b,The nail was vertical.,match,muraki2021,vertical,-15.077149415028593,EleutherAI/pythia-14m,256,14067712
+18,pen,b,The accountant stuck his pen into his pocket protector.,a,The pen was horizontal.,mismatch,muraki2021,horizontal,-15.945496698498253,EleutherAI/pythia-14m,256,14067712
+18,pen,b,The accountant stuck his pen into his pocket protector.,b,The pen was vertical.,match,muraki2021,vertical,-15.15512771137751,EleutherAI/pythia-14m,256,14067712
+19,pencil,b,Rick hurriedly stuck his pencil in the coffee mug.,a,The pencil was horizontal.,mismatch,muraki2021,horizontal,-16.124160487456077,EleutherAI/pythia-14m,256,14067712
+19,pencil,b,Rick hurriedly stuck his pencil in the coffee mug.,b,The pencil was vertical.,match,muraki2021,vertical,-15.090555774239213,EleutherAI/pythia-14m,256,14067712
+20,plate,b,Sara situated the expensive plate on its holder on the shelf.,a,The plate was horizontal.,mismatch,muraki2021,horizontal,-15.973052469377754,EleutherAI/pythia-14m,256,14067712
+20,plate,b,Sara situated the expensive plate on its holder on the shelf.,b,The plate was vertical.,match,muraki2021,vertical,-15.014726538633479,EleutherAI/pythia-14m,256,14067712
+21,salt shaker,b,The anxious little boy placed the salt shaker onto the table.,a,The salt shaker was horizontal.,mismatch,muraki2021,horizontal,-15.846013710873152,EleutherAI/pythia-14m,256,14067712
+21,salt shaker,b,The anxious little boy placed the salt shaker onto the table.,b,The salt shaker was vertical.,match,muraki2021,vertical,-15.099171417288888,EleutherAI/pythia-14m,256,14067712
+22,pair of scissors,b,Becca used the scissors to carve her initials into the wet concrete.,a,The pair of scissors was horizontal.,mismatch,muraki2021,horizontal,-16.2210913002123,EleutherAI/pythia-14m,256,14067712
+22,pair of scissors,b,Becca used the scissors to carve her initials into the wet concrete.,b,The pair of scissors was vertical.,match,muraki2021,vertical,-14.981507748918247,EleutherAI/pythia-14m,256,14067712
+23,screw,b,Jim prepared to insert the screw into the top of the cabinet.,a,The screw was horizontal.,mismatch,muraki2021,horizontal,-15.96964033178055,EleutherAI/pythia-14m,256,14067712
+23,screw,b,Jim prepared to insert the screw into the top of the cabinet.,b,The screw was vertical.,match,muraki2021,vertical,-14.968424649852189,EleutherAI/pythia-14m,256,14067712
+24,wheel,b,The young husband prepared to place the spare tire onto the wheel.,a,The wheel was horizontal.,mismatch,muraki2021,horizontal,-16.016496631012846,EleutherAI/pythia-14m,256,14067712
+24,wheel,b,The young husband prepared to place the spare tire onto the wheel.,b,The wheel was vertical.,match,muraki2021,vertical,-15.152126964489723,EleutherAI/pythia-14m,256,14067712
+1,steak,a,John looked at the steak on his plate.,a,The steak was brown.,match,connell2007,brown,-15.25345912930913,EleutherAI/pythia-14m,256,14067712
+1,steak,a,John looked at the steak on his plate.,b,The steak was red.,mismatch,connell2007,red,-12.877408786273577,EleutherAI/pythia-14m,256,14067712
+2,traffic light,a,The driving instructor told Bob to stop at the traffic lights.,a,The traffic light was light red.,match,connell2007,red,-13.820155738226179,EleutherAI/pythia-14m,256,14067712
+2,traffic light,a,The driving instructor told Bob to stop at the traffic lights.,b,The traffic light was light green.,mismatch,connell2007,green,-14.09473080450033,EleutherAI/pythia-14m,256,14067712
+3,tomato,a,Jane tasted the tomato when it was ready to eat.,a,The tomato was red.,match,connell2007,red,-12.724690902991407,EleutherAI/pythia-14m,256,14067712
+3,tomato,a,Jane tasted the tomato when it was ready to eat.,b,The tomato was green.,mismatch,connell2007,green,-14.313163961992759,EleutherAI/pythia-14m,256,14067712
+4,tree,a,Paula thought the tree outside her window looked beautiful in the summer.,a,The tree was green.,match,connell2007,green,-14.26758163131331,EleutherAI/pythia-14m,256,14067712
+4,tree,a,Paula thought the tree outside her window looked beautiful in the summer.,b,The tree was orange.,mismatch,connell2007,orange,-15.84597645956037,EleutherAI/pythia-14m,256,14067712
+5,hair,a,Susan liked it when her granddaughter wore her hair up.,a,The hair was brown.,match,connell2007,brown,-15.346475576531132,EleutherAI/pythia-14m,256,14067712
+5,hair,a,Susan liked it when her granddaughter wore her hair up.,b,The hair was grey.,mismatch,connell2007,grey,-16.340756854075376,EleutherAI/pythia-14m,256,14067712
+6,bear,a,Joe was excited to see a bear in the woods.,a,The bear was brown.,match,connell2007,brown,-15.106485522953065,EleutherAI/pythia-14m,256,14067712
+6,bear,a,Joe was excited to see a bear in the woods.,b,The bear was white.,mismatch,connell2007,white,-13.064333240402313,EleutherAI/pythia-14m,256,14067712
+7,leaf,a,Sarah stopped in the woods to pick a leaf off a tree.,a,The leaf was green.,match,connell2007,green,-14.272752160861103,EleutherAI/pythia-14m,256,14067712
+7,leaf,a,Sarah stopped in the woods to pick a leaf off a tree.,b,The leaf was orange.,mismatch,connell2007,orange,-15.786403141573235,EleutherAI/pythia-14m,256,14067712
+8,lamb,a,Anna found it very easy to spot the lamb in the dark grass.,a,The lamb was white.,match,connell2007,white,-12.944772351711656,EleutherAI/pythia-14m,256,14067712
+8,lamb,a,Anna found it very easy to spot the lamb in the dark grass.,b,The lamb was black.,mismatch,connell2007,black,-12.897227966560434,EleutherAI/pythia-14m,256,14067712
+9,bananas,a,The bananas that Mark bought looked ready to eat.,a,The bananas were yellow.,match,connell2007,yellow,-15.00484375840985,EleutherAI/pythia-14m,256,14067712
+9,bananas,a,The bananas that Mark bought looked ready to eat.,b,The bananas were green.,mismatch,connell2007,green,-14.499137702009651,EleutherAI/pythia-14m,256,14067712
+10,coffee,a,Joanne always took milk in her coffee.,a,The coffee was brown.,match,connell2007,brown,-15.144837622482688,EleutherAI/pythia-14m,256,14067712
+10,coffee,a,Joanne always took milk in her coffee.,b,The coffee was black.,mismatch,connell2007,black,-12.910335842436929,EleutherAI/pythia-14m,256,14067712
+11,sky,a,The children watched the seagulls fly across the sky in the sunshine.,a,The sky was blue.,match,connell2007,blue,-13.809480365187163,EleutherAI/pythia-14m,256,14067712
+11,sky,a,The children watched the seagulls fly across the sky in the sunshine.,b,The sky was grey.,mismatch,connell2007,grey,-16.3783632614496,EleutherAI/pythia-14m,256,14067712
+12,chameleon,a,The teacher pointed to the chameleon lying camouflaged in the grass.,a,The chameleon was green.,match,connell2007,green,-14.147193826897428,EleutherAI/pythia-14m,256,14067712
+12,chameleon,a,The teacher pointed to the chameleon lying camouflaged in the grass.,b,The chameleon was yellow.,mismatch,connell2007,yellow,-14.81281483337424,EleutherAI/pythia-14m,256,14067712
+1,steak,b,John looked at the steak in the butcher’s window.,a,The steak was brown.,mismatch,connell2007,brown,-15.245746042656945,EleutherAI/pythia-14m,256,14067712
+1,steak,b,John looked at the steak in the butcher’s window.,b,The steak was red.,match,connell2007,red,-12.915290373525142,EleutherAI/pythia-14m,256,14067712
+2,traffic light,b,The driving instructor told Bob to continue at the traffic lights.,a,The traffic light was light red.,mismatch,connell2007,red,-13.835957468942148,EleutherAI/pythia-14m,256,14067712
+2,traffic light,b,The driving instructor told Bob to continue at the traffic lights.,b,The traffic light was light green.,match,connell2007,green,-14.088557356207911,EleutherAI/pythia-14m,256,14067712
+3,tomato,b,Jane tasted the tomato before it was ready to eat.,a,The tomato was red.,mismatch,connell2007,red,-12.706785452913756,EleutherAI/pythia-14m,256,14067712
+3,tomato,b,Jane tasted the tomato before it was ready to eat.,b,The tomato was green.,match,connell2007,green,-14.27829550719634,EleutherAI/pythia-14m,256,14067712
+4,tree,b,Paula thought the tree outside her window looked beautiful in the autumn.,a,The tree was green.,mismatch,connell2007,green,-14.274414167140076,EleutherAI/pythia-14m,256,14067712
+4,tree,b,Paula thought the tree outside her window looked beautiful in the autumn.,b,The tree was orange.,match,connell2007,orange,-15.85251323303442,EleutherAI/pythia-14m,256,14067712
+5,hair,b,Susan liked it when her grandmother wore her hair up.,a,The hair was brown.,mismatch,connell2007,brown,-15.341794947029758,EleutherAI/pythia-14m,256,14067712
+5,hair,b,Susan liked it when her grandmother wore her hair up.,b,The hair was grey.,match,connell2007,grey,-16.2651078733173,EleutherAI/pythia-14m,256,14067712
+6,bear,b,Joe was excited to see a bear at the north pole.,a,The bear was brown.,mismatch,connell2007,brown,-15.124620724357234,EleutherAI/pythia-14m,256,14067712
+6,bear,b,Joe was excited to see a bear at the north pole.,b,The bear was white.,match,connell2007,white,-13.031056676967257,EleutherAI/pythia-14m,256,14067712
+7,leaf,b,Sarah stopped in the woods to pick a leaf off the ground.,a,The leaf was green.,mismatch,connell2007,green,-14.230619147047475,EleutherAI/pythia-14m,256,14067712
+7,leaf,b,Sarah stopped in the woods to pick a leaf off the ground.,b,The leaf was orange.,match,connell2007,orange,-15.779995788984339,EleutherAI/pythia-14m,256,14067712
+8,lamb,b,Anna found it very difficult to spot the lamb in the dark grass.,a,The lamb was white.,mismatch,connell2007,white,-12.910348287171438,EleutherAI/pythia-14m,256,14067712
+8,lamb,b,Anna found it very difficult to spot the lamb in the dark grass.,b,The lamb was black.,match,connell2007,black,-12.896105379313479,EleutherAI/pythia-14m,256,14067712
+9,bananas,b,The bananas that Mark bought didn't look ready to eat.,a,The bananas were yellow.,mismatch,connell2007,yellow,-14.920635503501204,EleutherAI/pythia-14m,256,14067712
+9,bananas,b,The bananas that Mark bought didn't look ready to eat.,b,The bananas were green.,match,connell2007,green,-14.425563536896286,EleutherAI/pythia-14m,256,14067712
+10,coffee,b,Joanne never took milk in her coffee.,a,The coffee was brown.,mismatch,connell2007,brown,-15.118615082851376,EleutherAI/pythia-14m,256,14067712
+10,coffee,b,Joanne never took milk in her coffee.,b,The coffee was black.,match,connell2007,black,-12.885176782372353,EleutherAI/pythia-14m,256,14067712
+11,sky,b,The children watched the seagulls fly across the sky in the rain.,a,The sky was blue.,mismatch,connell2007,blue,-13.817635200681076,EleutherAI/pythia-14m,256,14067712
+11,sky,b,The children watched the seagulls fly across the sky in the rain.,b,The sky was grey.,match,connell2007,grey,-16.333728962983976,EleutherAI/pythia-14m,256,14067712
+12,chameleon,b,The teacher pointed to the chameleon lying camouflaged in the sand.,a,The chameleon was green.,mismatch,connell2007,green,-14.12863898357562,EleutherAI/pythia-14m,256,14067712
+12,chameleon,b,The teacher pointed to the chameleon lying camouflaged in the sand.,b,The chameleon was yellow.,match,connell2007,yellow,-14.845276900913333,EleutherAI/pythia-14m,256,14067712
+35,airplane,a,There was an airplane in the hangar.,a,The airplane's wheels were down.,match,pecher2006,down,-11.585432433851327,EleutherAI/pythia-14m,256,14067712
+35,airplane,a,There was an airplane in the hangar.,b,The airplane's wheels were retracted.,mismatch,pecher2006,retracted,-30.300789449389683,EleutherAI/pythia-14m,256,14067712
+53,apple,a,There was an apple in the bag.,a,The apple was whole.,match,pecher2006,whole,-13.334881200561275,EleutherAI/pythia-14m,256,14067712
+53,apple,a,There was an apple in the bag.,b,The apple was sliced.,mismatch,pecher2006,sliced,-16.559094977297736,EleutherAI/pythia-14m,256,14067712
+1,apple pie,a,There was apple pie on the table.,a,The apple pie was whole.,match,pecher2006,whole,-13.237653244600505,EleutherAI/pythia-14m,256,14067712
+1,apple pie,a,There was apple pie on the table.,b,The apple pie was sliced.,mismatch,pecher2006,sliced,-16.744281853942944,EleutherAI/pythia-14m,256,14067712
+21,avocado,a,There was an avocado in the crate.,a,The avocado was whole.,match,pecher2006,whole,-13.100446879643965,EleutherAI/pythia-14m,256,14067712
+21,avocado,a,There was an avocado in the crate.,b,The avocado was sliced.,mismatch,pecher2006,sliced,-16.610941542975496,EleutherAI/pythia-14m,256,14067712
+39,balloon,a,There was a balloon in the pack.,a,The balloon was deflated.,match,pecher2006,deflated,-30.883719820635715,EleutherAI/pythia-14m,256,14067712
+39,balloon,a,There was a balloon in the pack.,b,The balloon was inflated.,mismatch,pecher2006,inflated,-16.51213691014664,EleutherAI/pythia-14m,256,14067712
+32,banana,a,There was a banana on the counter.,a,The banana was whole.,match,pecher2006,whole,-13.234403503070286,EleutherAI/pythia-14m,256,14067712
+32,banana,a,There was a banana on the counter.,b,The banana was sliced.,mismatch,pecher2006,sliced,-16.668652071714185,EleutherAI/pythia-14m,256,14067712
+47,book,a,There was a book on the shelf.,a,The book was closed.,match,pecher2006,closed,-13.41078753865617,EleutherAI/pythia-14m,256,14067712
+47,book,a,There was a book on the shelf.,b,The book was open.,mismatch,pecher2006,open,-12.70717343770313,EleutherAI/pythia-14m,256,14067712
+40,bread,a,There was bread in the bakery window.,a,The bread was in a loaf.,match,pecher2006,loaf,-16.269044216161028,EleutherAI/pythia-14m,256,14067712
+40,bread,a,There was bread in the bakery window.,b,The bread was in a slice.,mismatch,pecher2006,slice,-15.49161933172796,EleutherAI/pythia-14m,256,14067712
+12,carrot,a,There was a carrot in the garden.,a,The carrot was whole.,match,pecher2006,whole,-13.298543349743246,EleutherAI/pythia-14m,256,14067712
+12,carrot,a,There was a carrot in the garden.,b,The carrot was sliced.,mismatch,pecher2006,sliced,-16.657259984138527,EleutherAI/pythia-14m,256,14067712
+28,cheesecake,a,There was cheesecake for the party.,a,The cheesecake was whole.,match,pecher2006,whole,-13.04187089629327,EleutherAI/pythia-14m,256,14067712
+28,cheesecake,a,There was cheesecake for the party.,b,The cheesecake was sliced.,mismatch,pecher2006,sliced,-16.810178607488975,EleutherAI/pythia-14m,256,14067712
+36,chicken,a,There was a chicken in the coop.,a,The chicken was alive.,match,pecher2006,alive,-15.221929890821366,EleutherAI/pythia-14m,256,14067712
+36,chicken,a,There was a chicken in the coop.,b,The chicken was plucked.,mismatch,pecher2006,plucked,-31.841864022847915,EleutherAI/pythia-14m,256,14067712
+54,cigarette,a,There was a cigarette in the box.,a,The cigarette was intact.,match,pecher2006,intact,-16.41632461815149,EleutherAI/pythia-14m,256,14067712
+54,cigarette,a,There was a cigarette in the box.,b,The cigarette was crushed.,mismatch,pecher2006,crushed,-15.595626171268254,EleutherAI/pythia-14m,256,14067712
+7,coat,a,There was a coat on the rack.,a,The coat was hanging.,match,pecher2006,hanging,-16.244772649191994,EleutherAI/pythia-14m,256,14067712
+7,coat,a,There was a coat on the rack.,b,The coat was crumpled.,mismatch,pecher2006,crumpled,-42.70657774706926,EleutherAI/pythia-14m,256,14067712
+55,corn,a,There was corn in the field.,a,The corn was on the cob,match,pecher2006,on the cob,-29.142603247403223,EleutherAI/pythia-14m,256,14067712
+55,corn,a,There was corn in the field.,b,The corn was off the cob.,mismatch,pecher2006,off the cob,-33.13279065014565,EleutherAI/pythia-14m,256,14067712
+18,cucumber,a,There was a cucumber in the fridge.,a,The cucumber was whole.,match,pecher2006,whole,-13.128595551131056,EleutherAI/pythia-14m,256,14067712
+18,cucumber,a,There was a cucumber in the fridge.,b,The cucumber was sliced.,mismatch,pecher2006,sliced,-16.713496947812857,EleutherAI/pythia-14m,256,14067712
+56,eagle,a,There was an eagle in the nest.,a,The eagle's wings were folded.,match,pecher2006,folded,-16.40469994307855,EleutherAI/pythia-14m,256,14067712
+56,eagle,a,There was an eagle in the nest.,b,The eagle's wings were outstretched.,mismatch,pecher2006,outstretched,-40.75209261771874,EleutherAI/pythia-14m,256,14067712
+41,egg,a,There was an egg in the refrigerator.,a,The egg was whole.,match,pecher2006,whole,-13.27080050973362,EleutherAI/pythia-14m,256,14067712
+41,egg,a,There was an egg in the refrigerator.,b,The egg was frying.,mismatch,pecher2006,frying,-18.33751524276549,EleutherAI/pythia-14m,256,14067712
+48,fish,a,There was a fish in the pond.,a,The fish was whole.,match,pecher2006,whole,-13.201367622197338,EleutherAI/pythia-14m,256,14067712
+48,fish,a,There was a fish in the pond.,b,The fish was filetted.,mismatch,pecher2006,filetted,-37.01770259411827,EleutherAI/pythia-14m,256,14067712
+22,frog,a,There was a frog in the field.,a,The frog's legs were folded.,match,pecher2006,folded,-16.37001312301836,EleutherAI/pythia-14m,256,14067712
+22,frog,a,There was a frog in the field.,b,The frog's legs were outstretched.,mismatch,pecher2006,outstretched,-40.71588277258563,EleutherAI/pythia-14m,256,14067712
+13,garbage bag,a,There was a garbage bag in the cupboard.,a,The garbage bag was empty.,match,pecher2006,empty,-14.476592866545875,EleutherAI/pythia-14m,256,14067712
+13,garbage bag,a,There was a garbage bag in the cupboard.,b,The garbage bag was full.,mismatch,pecher2006,full,-12.47052535939163,EleutherAI/pythia-14m,256,14067712
+14,goose,a,There was a goose in the field.,a,The goose's wings were folded.,match,pecher2006,folded,-16.292813617965034,EleutherAI/pythia-14m,256,14067712
+14,goose,a,There was a goose in the field.,b,The goose's wings were outstretched.,mismatch,pecher2006,outstretched,-40.77780738720173,EleutherAI/pythia-14m,256,14067712
+37,hockey,a,There was a hockey player on the ice.,a,The hockey player was standing.,match,pecher2006,standing,-14.373645489604318,EleutherAI/pythia-14m,256,14067712
+37,hockey,a,There was a hockey player on the ice.,b,The hockey player was sitting.,mismatch,pecher2006,sitting,-14.700862427426397,EleutherAI/pythia-14m,256,14067712
+2,horse,a,There was a horse in the stable.,a,The horse was standing.,match,pecher2006,standing,-14.52715028609898,EleutherAI/pythia-14m,256,14067712
+2,horse,a,There was a horse in the stable.,b,The horse was sitting.,mismatch,pecher2006,sitting,-14.590855380230966,EleutherAI/pythia-14m,256,14067712
+29,hose,a,There was a hose on the wall.,a,The hose was coiled.,match,pecher2006,coiled,-28.05234335567045,EleutherAI/pythia-14m,256,14067712
+29,hose,a,There was a hose on the wall.,b,The hose was extended.,mismatch,pecher2006,extended,-14.074046130410132,EleutherAI/pythia-14m,256,14067712
+15,ice,a,There was ice in the glass.,a,The ice was shaped into ice cubes.,match,pecher2006,cubes,-18.01188752494693,EleutherAI/pythia-14m,256,14067712
+15,ice,a,There was ice in the glass.,b,The ice was shaped into icicles.,mismatch,pecher2006,icicles,-31.713077937837426,EleutherAI/pythia-14m,256,14067712
+33,ketchup,a,There was ketchup on the table.,a,The ketchup was in a bottle.,match,pecher2006,bottle,-14.887153922003609,EleutherAI/pythia-14m,256,14067712
+33,ketchup,a,There was ketchup on the table.,b,The ketchup was in a dollop.,mismatch,pecher2006,dollop,-29.3380801513243,EleutherAI/pythia-14m,256,14067712
+19,lamp,a,There was a lamp on the floor.,a,The lamp was tall.,match,pecher2006,tall,-15.709844716286264,EleutherAI/pythia-14m,256,14067712
+19,lamp,a,There was a lamp on the floor.,b,The lamp was short.,mismatch,pecher2006,short,-12.406455572560708,EleutherAI/pythia-14m,256,14067712
+49,lemon,a,There was a lemon in the tree.,a,The lemon was whole.,match,pecher2006,whole,-13.13301213547509,EleutherAI/pythia-14m,256,14067712
+49,lemon,a,There was a lemon in the tree.,b,The lemon was sliced.,mismatch,pecher2006,sliced,-16.674510485081942,EleutherAI/pythia-14m,256,14067712
+38,lime,a,There was a lime in the produce section.,a,The lime was whole.,match,pecher2006,whole,-13.059041705632284,EleutherAI/pythia-14m,256,14067712
+38,lime,a,There was a lime in the produce section.,b,The lime was sliced.,mismatch,pecher2006,sliced,-16.771588475113727,EleutherAI/pythia-14m,256,14067712
+57,lobster,a,There was a lobster in the sea.,a,The lobster was whole.,match,pecher2006,whole,-13.219826215788594,EleutherAI/pythia-14m,256,14067712
+57,lobster,a,There was a lobster in the sea.,b,The lobster was in pieces.,mismatch,pecher2006,pieces,-14.876225584976632,EleutherAI/pythia-14m,256,14067712
+20,map,a,There was a map in the glove compartment.,a,The map was folded.,match,pecher2006,folded,-16.495384407966,EleutherAI/pythia-14m,256,14067712
+20,map,a,There was a map in the glove compartment.,b,The map was spread out.,mismatch,pecher2006,spread out,-24.13875289939519,EleutherAI/pythia-14m,256,14067712
+8,match,a,There was a match in the box.,a,The match was fresh.,match,pecher2006,fresh,-14.34448958480106,EleutherAI/pythia-14m,256,14067712
+8,match,a,There was a match in the box.,b,The match was burned.,mismatch,pecher2006,burned,-15.95528738308502,EleutherAI/pythia-14m,256,14067712
+42,mushroom,a,There was a mushroom in the forest.,a,The mushroom was whole.,match,pecher2006,whole,-13.208669359304414,EleutherAI/pythia-14m,256,14067712
+42,mushroom,a,There was a mushroom in the forest.,b,The mushroom was sliced.,mismatch,pecher2006,sliced,-16.73670357372919,EleutherAI/pythia-14m,256,14067712
+43,newspaper,a,There was a newspaper on the driveway.,a,The newspaper was rolled up.,match,pecher2006,rolled up,-26.049350844963318,EleutherAI/pythia-14m,256,14067712
+43,newspaper,a,There was a newspaper on the driveway.,b,The newspaper was flat.,mismatch,pecher2006,flat,-14.88550288735767,EleutherAI/pythia-14m,256,14067712
+50,onion,a,There was an onion in the basket.,a,The onion was whole.,match,pecher2006,whole,-13.280474141303417,EleutherAI/pythia-14m,256,14067712
+50,onion,a,There was an onion in the basket.,b,The onion was sliced.,mismatch,pecher2006,sliced,-16.618273557316876,EleutherAI/pythia-14m,256,14067712
+9,owl,a,There was an owl in the barn.,a,The owl's wings were folded.,match,pecher2006,folded,-16.283256823729612,EleutherAI/pythia-14m,256,14067712
+9,owl,a,There was an owl in the barn.,b,The owl's wings were outstretched.,mismatch,pecher2006,outstretched,-40.542009627706214,EleutherAI/pythia-14m,256,14067712
+23,paint,a,There was paint in the store.,a,The paint was in a can.,match,pecher2006,can,-10.566127691957316,EleutherAI/pythia-14m,256,14067712
+23,paint,a,There was paint in the store.,b,The paint was in a smear.,mismatch,pecher2006,smear,-16.849859941542817,EleutherAI/pythia-14m,256,14067712
+44,pineapple,a,There was a pineapple on the plant.,a,The pineapple was whole.,match,pecher2006,whole,-13.226200581305697,EleutherAI/pythia-14m,256,14067712
+44,pineapple,a,There was a pineapple on the plant.,b,The pineapple was in chunks.,mismatch,pecher2006,chunks,-17.71967934383718,EleutherAI/pythia-14m,256,14067712
+10,pumpkin,a,There was a pumpkin on the cart.,a,The pumpkin was whole.,match,pecher2006,whole,-13.054396762302384,EleutherAI/pythia-14m,256,14067712
+10,pumpkin,a,There was a pumpkin on the cart.,b,The pumpkin was carved.,mismatch,pecher2006,carved,-17.190657934552366,EleutherAI/pythia-14m,256,14067712
+45,sailboat,a,There was a sailboat on the trailer.,a,The sailboat's sails were down.,match,pecher2006,down,-11.675845828946088,EleutherAI/pythia-14m,256,14067712
+45,sailboat,a,There was a sailboat on the trailer.,b,The sailboat's sails were up.,mismatch,pecher2006,up,-11.207512917185479,EleutherAI/pythia-14m,256,14067712
+3,scarf,a,There was a scarf on the rack.,a,The scarf was hanging.,match,pecher2006,hanging,-16.22687125929792,EleutherAI/pythia-14m,256,14067712
+3,scarf,a,There was a scarf on the rack.,b,The scarf was crumpled.,mismatch,pecher2006,crumpled,-42.97021486303599,EleutherAI/pythia-14m,256,14067712
+58,shirt,a,There was a shirt on the hanger.,a,The shirt was hanging.,match,pecher2006,hanging,-16.211929508156906,EleutherAI/pythia-14m,256,14067712
+58,shirt,a,There was a shirt on the hanger.,b,The shirt was folded.,mismatch,pecher2006,folded,-16.285839395124313,EleutherAI/pythia-14m,256,14067712
+4,shoelace,a,There was a shoelace in the package.,a,The shoelace was coiled.,match,pecher2006,coiled,-28.05321836415818,EleutherAI/pythia-14m,256,14067712
+4,shoelace,a,There was a shoelace in the package.,b,The shoelace was tied.,mismatch,pecher2006,tied,-15.334322638538046,EleutherAI/pythia-14m,256,14067712
+30,soap,a,There was soap in the dish.,a,The soap was in a bar.,match,pecher2006,bar,-12.866214650311804,EleutherAI/pythia-14m,256,14067712
+30,soap,a,There was soap in the dish.,b,The soap was in a lather.,mismatch,pecher2006,lather,-29.46604344194491,EleutherAI/pythia-14m,256,14067712
+59,spaghetti,a,There was spaghetti in the box.,a,The spaghetti was straight.,match,pecher2006,straight,-13.887517858308378,EleutherAI/pythia-14m,256,14067712
+59,spaghetti,a,There was spaghetti in the box.,b,The spaghetti was curvy.,mismatch,pecher2006,curvy,-29.788336241201378,EleutherAI/pythia-14m,256,14067712
+11,squid,a,There was a squid in the water.,a,The squid was alive.,match,pecher2006,alive,-15.394705081689574,EleutherAI/pythia-14m,256,14067712
+11,squid,a,There was a squid in the water.,b,The squid was cooked.,mismatch,pecher2006,cooked,-16.083470836889102,EleutherAI/pythia-14m,256,14067712
+5,staple,a,There was a staple in the machine.,a,The staple was U-shaped.,match,pecher2006,U-shaped,-36.53734271878409,EleutherAI/pythia-14m,256,14067712
+5,staple,a,There was a staple in the machine.,b,The staple was clamped inward.,mismatch,pecher2006,inward,-17.460564741248405,EleutherAI/pythia-14m,256,14067712
+26,sugar,a,There was sugar on the table.,a,The sugar was in a dispenser.,match,pecher2006,dispenser,-29.272170926282644,EleutherAI/pythia-14m,256,14067712
+26,sugar,a,There was sugar on the table.,b,The sugar was in a heap.,mismatch,pecher2006,heap,-16.838217348080455,EleutherAI/pythia-14m,256,14067712
+16,swiss knife,a,There was a swiss knife in his pocket.,a,The swiss knife was closed.,match,pecher2006,closed,-13.447578087691166,EleutherAI/pythia-14m,256,14067712
+16,swiss knife,a,There was a swiss knife in his pocket.,b,The swiss knife was open.,mismatch,pecher2006,open,-12.668815836469307,EleutherAI/pythia-14m,256,14067712
+31,tape,a,There was tape on the shelf.,a,There tape was on a roll.,match,pecher2006,on a roll,-32.02635605449623,EleutherAI/pythia-14m,256,14067712
+31,tape,a,There was tape on the shelf.,b,The tape was in a strip.,mismatch,pecher2006,in a strip,-30.936500573056424,EleutherAI/pythia-14m,256,14067712
+27,tinfoil,a,There was tinfoil in the drawer.,a,The tinfoil was rolled up.,match,pecher2006,rolled up,-26.2325962647377,EleutherAI/pythia-14m,256,14067712
+27,tinfoil,a,There was tinfoil in the drawer.,b,The tinfoil was crumpled up.,mismatch,pecher2006,crumpled up,-53.95124923424032,EleutherAI/pythia-14m,256,14067712
+60,tissue,a,There was a tissue in the box.,a,The tissue was rectangular.,match,pecher2006,rectangular,-18.120943775189996,EleutherAI/pythia-14m,256,14067712
+60,tissue,a,There was a tissue in the box.,b,The tissue was balled up.,mismatch,pecher2006,balled up,-35.44700568628754,EleutherAI/pythia-14m,256,14067712
+46,tomato,a,There was a tomato on the vine.,a,The tomato was whole.,match,pecher2006,whole,-13.100774289778492,EleutherAI/pythia-14m,256,14067712
+46,tomato,a,There was a tomato on the vine.,b,The tomato was sliced.,mismatch,pecher2006,sliced,-16.77679472286433,EleutherAI/pythia-14m,256,14067712
+51,towel,a,There was a towel on the floor.,a,The towel was crumpled.,match,pecher2006,crumpled,-42.91950057912957,EleutherAI/pythia-14m,256,14067712
+51,towel,a,There was a towel on the floor.,b,The towel was hanging.,mismatch,pecher2006,hanging,-16.18194254310276,EleutherAI/pythia-14m,256,14067712
+17,umbrella,a,There was an umbrella in her bag.,a,The umbrella was closed.,match,pecher2006,closed,-13.43501637952517,EleutherAI/pythia-14m,256,14067712
+17,umbrella,a,There was an umbrella in her bag.,b,The umbrella was open.,mismatch,pecher2006,open,-12.548256001550287,EleutherAI/pythia-14m,256,14067712
+24,walnut,a,There was a walnut on the tree.,a,The walnut was whole.,match,pecher2006,whole,-13.156119671184305,EleutherAI/pythia-14m,256,14067712
+24,walnut,a,There was a walnut on the tree.,b,The walnut was chopped.,mismatch,pecher2006,chopped,-16.474522203543682,EleutherAI/pythia-14m,256,14067712
+52,watermelon,a,There was a watermelon in the garden.,a,The watermelon was whole.,match,pecher2006,whole,-13.069232709572926,EleutherAI/pythia-14m,256,14067712
+52,watermelon,a,There was a watermelon in the garden.,b,The watermelon was sliced.,mismatch,pecher2006,sliced,-16.795741709205178,EleutherAI/pythia-14m,256,14067712
+6,wheat,a,There was wheat in the field.,a,The wheat was in stalks.,match,pecher2006,stalks,-30.60853665013087,EleutherAI/pythia-14m,256,14067712
+6,wheat,a,There was wheat in the field.,b,The wheat was in grains.,mismatch,pecher2006,grains,-16.006383997364487,EleutherAI/pythia-14m,256,14067712
+34,wool,a,There was wool in the basket.,a,The wool was in a ball.,match,pecher2006,in a ball,-28.93898964357338,EleutherAI/pythia-14m,256,14067712
+34,wool,a,There was wool in the basket.,b,The wool was knitted.,mismatch,pecher2006,knitted,-32.132434968151316,EleutherAI/pythia-14m,256,14067712
+25,zodiac,a,There was a zodiac in the ocean.,a,The zodiac was deflated.,match,pecher2006,deflated,-30.771422013570067,EleutherAI/pythia-14m,256,14067712
+25,zodiac,a,There was a zodiac in the ocean.,b,The zodiac was inflated.,mismatch,pecher2006,inflated,-16.671485032359037,EleutherAI/pythia-14m,256,14067712
+35,airplane,b,There was an airplane in the sky.,a,The airplane's wheels were down.,mismatch,pecher2006,down,-11.558475192489166,EleutherAI/pythia-14m,256,14067712
+35,airplane,b,There was an airplane in the sky.,b,The airplane's wheels were retracted.,match,pecher2006,retracted,-30.29498887769254,EleutherAI/pythia-14m,256,14067712
+53,apple,b,There was apple in the salad.,a,The apple was whole.,mismatch,pecher2006,whole,-13.170863385926014,EleutherAI/pythia-14m,256,14067712
+53,apple,b,There was apple in the salad.,b,The apple was sliced.,match,pecher2006,sliced,-16.535013355959894,EleutherAI/pythia-14m,256,14067712
+1,apple pie,b,There was apple pie on the plate.,a,The apple pie was whole.,mismatch,pecher2006,whole,-13.196311390638984,EleutherAI/pythia-14m,256,14067712
+1,apple pie,b,There was apple pie on the plate.,b,The apple pie was sliced.,match,pecher2006,sliced,-16.706102942787883,EleutherAI/pythia-14m,256,14067712
+21,avocado,b,There was avocado in the dish.,a,The avocado was whole.,mismatch,pecher2006,whole,-13.14080771189932,EleutherAI/pythia-14m,256,14067712
+21,avocado,b,There was avocado in the dish.,b,The avocado was sliced.,match,pecher2006,sliced,-16.666487831684393,EleutherAI/pythia-14m,256,14067712
+39,balloon,b,There was a balloon in the air.,a,The balloon was deflated.,mismatch,pecher2006,deflated,-30.884072099683237,EleutherAI/pythia-14m,256,14067712
+39,balloon,b,There was a balloon in the air.,b,The balloon was inflated.,match,pecher2006,inflated,-16.446120213073225,EleutherAI/pythia-14m,256,14067712
+32,banana,b,There was banana on the pancake.,a,The banana was whole.,mismatch,pecher2006,whole,-13.316919291986048,EleutherAI/pythia-14m,256,14067712
+32,banana,b,There was banana on the pancake.,b,The banana was sliced.,match,pecher2006,sliced,-16.79454618671516,EleutherAI/pythia-14m,256,14067712
+47,book,b,There was a book on the photocopier.,a,The book was closed.,mismatch,pecher2006,closed,-13.38400090435721,EleutherAI/pythia-14m,256,14067712
+47,book,b,There was a book on the photocopier.,b,The book was open.,match,pecher2006,open,-12.675657913567631,EleutherAI/pythia-14m,256,14067712
+40,bread,b,There was bread in the toaster.,a,The bread was in a loaf.,mismatch,pecher2006,loaf,-16.280013927593643,EleutherAI/pythia-14m,256,14067712
+40,bread,b,There was bread in the toaster.,b,The bread was in a slice.,match,pecher2006,slice,-15.63852963363921,EleutherAI/pythia-14m,256,14067712
+12,carrot,b,There was carrot in the curry.,a,The carrot was whole.,mismatch,pecher2006,whole,-13.36097996906684,EleutherAI/pythia-14m,256,14067712
+12,carrot,b,There was carrot in the curry.,b,The carrot was sliced.,match,pecher2006,sliced,-16.645168858541158,EleutherAI/pythia-14m,256,14067712
+28,cheesecake,b,There was cheesecake for the guest.,a,The cheesecake was whole.,mismatch,pecher2006,whole,-12.997676838033321,EleutherAI/pythia-14m,256,14067712
+28,cheesecake,b,There was cheesecake for the guest.,b,The cheesecake was sliced.,match,pecher2006,sliced,-16.864097240424833,EleutherAI/pythia-14m,256,14067712
+36,chicken,b,There was chicken in the oven.,a,The chicken was alive.,mismatch,pecher2006,alive,-15.123427879528277,EleutherAI/pythia-14m,256,14067712
+36,chicken,b,There was chicken in the oven.,b,The chicken was plucked.,match,pecher2006,plucked,-31.756802913141673,EleutherAI/pythia-14m,256,14067712
+54,cigarette,b,There was a cigarette in the ashtray.,a,The cigarette was intact.,mismatch,pecher2006,intact,-16.529446622185052,EleutherAI/pythia-14m,256,14067712
+54,cigarette,b,There was a cigarette in the ashtray.,b,The cigarette was crushed.,match,pecher2006,crushed,-15.613366500552258,EleutherAI/pythia-14m,256,14067712
+7,coat,b,There was a coat on the floor.,a,The coat was hanging.,mismatch,pecher2006,hanging,-16.191376796722157,EleutherAI/pythia-14m,256,14067712
+7,coat,b,There was a coat on the floor.,b,The coat was crumpled.,match,pecher2006,crumpled,-42.644245788454064,EleutherAI/pythia-14m,256,14067712
+55,corn,b,There was corn in the cooking pot.,a,The corn was on the cob,mismatch,pecher2006,on the cob,-29.16460876375706,EleutherAI/pythia-14m,256,14067712
+55,corn,b,There was corn in the cooking pot.,b,The corn was off the cob.,match,pecher2006,off the cob,-33.0908598832546,EleutherAI/pythia-14m,256,14067712
+18,cucumber,b,There was cucumber in the salad.,a,The cucumber was whole.,mismatch,pecher2006,whole,-13.149833387506671,EleutherAI/pythia-14m,256,14067712
+18,cucumber,b,There was cucumber in the salad.,b,The cucumber was sliced.,match,pecher2006,sliced,-16.60727904770716,EleutherAI/pythia-14m,256,14067712
+56,eagle,b,There was an eagle in the sky.,a,The eagle's wings were folded.,mismatch,pecher2006,folded,-16.44862569423523,EleutherAI/pythia-14m,256,14067712
+56,eagle,b,There was an eagle in the sky.,b,The eagle's wings were outstretched.,match,pecher2006,outstretched,-40.76729583105077,EleutherAI/pythia-14m,256,14067712
+41,egg,b,There was an egg in the skillet.,a,The egg was whole.,mismatch,pecher2006,whole,-13.216850276269051,EleutherAI/pythia-14m,256,14067712
+41,egg,b,There was an egg in the skillet.,b,The egg was frying.,match,pecher2006,frying,-18.31152940979141,EleutherAI/pythia-14m,256,14067712
+48,fish,b,There was fish in the oven.,a,The fish was whole.,mismatch,pecher2006,whole,-13.206080024705653,EleutherAI/pythia-14m,256,14067712
+48,fish,b,There was fish in the oven.,b,The fish was filetted.,match,pecher2006,filetted,-37.028172925907874,EleutherAI/pythia-14m,256,14067712
+22,frog,b,There was a frog in the pool.,a,The frog's legs were folded.,mismatch,pecher2006,folded,-16.302950892475803,EleutherAI/pythia-14m,256,14067712
+22,frog,b,There was a frog in the pool.,b,The frog's legs were outstretched.,match,pecher2006,outstretched,-40.86640746733264,EleutherAI/pythia-14m,256,14067712
+13,garbage bag,b,There was a garbage bag in the dumpster.,a,The garbage bag was empty.,mismatch,pecher2006,empty,-14.44156200280655,EleutherAI/pythia-14m,256,14067712
+13,garbage bag,b,There was a garbage bag in the dumpster.,b,The garbage bag was full.,match,pecher2006,full,-12.53388506752782,EleutherAI/pythia-14m,256,14067712
+14,goose,b,There was a goose in the sky.,a,The goose's wings were folded.,mismatch,pecher2006,folded,-16.361668606910943,EleutherAI/pythia-14m,256,14067712
+14,goose,b,There was a goose in the sky.,b,The goose's wings were outstretched.,match,pecher2006,outstretched,-40.74500414497382,EleutherAI/pythia-14m,256,14067712
+37,hockey,b,There was a hockey player on the bench.,a,The hockey player was standing.,mismatch,pecher2006,standing,-14.42671247350869,EleutherAI/pythia-14m,256,14067712
+37,hockey,b,There was a hockey player on the bench.,b,The hockey player was sitting.,match,pecher2006,sitting,-14.702583547603247,EleutherAI/pythia-14m,256,14067712
+2,horse,b,There was a horse in the arena.,a,The horse was standing.,mismatch,pecher2006,standing,-14.50939758369158,EleutherAI/pythia-14m,256,14067712
+2,horse,b,There was a horse in the arena.,b,The horse was sitting.,match,pecher2006,sitting,-14.622820719585489,EleutherAI/pythia-14m,256,14067712
+29,hose,b,There was a hose on the lawn.,a,The hose was coiled.,mismatch,pecher2006,coiled,-28.054129168429235,EleutherAI/pythia-14m,256,14067712
+29,hose,b,There was a hose on the lawn.,b,The hose was extended.,match,pecher2006,extended,-14.08304840627857,EleutherAI/pythia-14m,256,14067712
+15,ice,b,There was ice in the gutter.,a,The ice was shaped into ice cubes.,mismatch,pecher2006,cubes,-17.83515535755657,EleutherAI/pythia-14m,256,14067712
+15,ice,b,There was ice in the gutter.,b,The ice was shaped into icicles.,match,pecher2006,icicles,-31.693006868545204,EleutherAI/pythia-14m,256,14067712
+33,ketchup,b,There was ketchup on the plate.,a,The ketchup was in a bottle.,mismatch,pecher2006,bottle,-14.913911732190563,EleutherAI/pythia-14m,256,14067712
+33,ketchup,b,There was ketchup on the plate.,b,The ketchup was in a dollop.,match,pecher2006,dollop,-29.328231767891427,EleutherAI/pythia-14m,256,14067712
+19,lamp,b,There was a lamp on the table.,a,The lamp was tall.,mismatch,pecher2006,tall,-15.702720419038432,EleutherAI/pythia-14m,256,14067712
+19,lamp,b,There was a lamp on the table.,b,The lamp was short.,match,pecher2006,short,-12.411133505922432,EleutherAI/pythia-14m,256,14067712
+49,lemon,b,There was lemon in the drink.,a,The lemon was whole.,mismatch,pecher2006,whole,-13.116104108542375,EleutherAI/pythia-14m,256,14067712
+49,lemon,b,There was lemon in the drink.,b,The lemon was sliced.,match,pecher2006,sliced,-16.629069996470264,EleutherAI/pythia-14m,256,14067712
+38,lime,b,There was lime in the Corona bottle.,a,The lime was whole.,mismatch,pecher2006,whole,-13.041287555234097,EleutherAI/pythia-14m,256,14067712
+38,lime,b,There was lime in the Corona bottle.,b,The lime was sliced.,match,pecher2006,sliced,-16.726729982137094,EleutherAI/pythia-14m,256,14067712
+57,lobster,b,There was lobster in the salad.,a,The lobster was whole.,mismatch,pecher2006,whole,-13.260390773172123,EleutherAI/pythia-14m,256,14067712
+57,lobster,b,There was lobster in the salad.,b,The lobster was in pieces.,match,pecher2006,pieces,-14.901132759994645,EleutherAI/pythia-14m,256,14067712
+20,map,b,There was a map on the wall.,a,The map was folded.,mismatch,pecher2006,folded,-16.548161066014206,EleutherAI/pythia-14m,256,14067712
+20,map,b,There was a map on the wall.,b,The map was spread out.,match,pecher2006,spread out,-24.21496466906991,EleutherAI/pythia-14m,256,14067712
+8,match,b,There was a match in the ashtray.,a,The match was fresh.,mismatch,pecher2006,fresh,-14.35384399358589,EleutherAI/pythia-14m,256,14067712
+8,match,b,There was a match in the ashtray.,b,The match was burned.,match,pecher2006,burned,-16.086694471557607,EleutherAI/pythia-14m,256,14067712
+42,mushroom,b,There was mushroom in the soup.,a,The mushroom was whole.,mismatch,pecher2006,whole,-13.233857230893685,EleutherAI/pythia-14m,256,14067712
+42,mushroom,b,There was mushroom in the soup.,b,The mushroom was sliced.,match,pecher2006,sliced,-16.790152968667574,EleutherAI/pythia-14m,256,14067712
+43,newspaper,b,There was a newspaper on the rack.,a,The newspaper was rolled up.,mismatch,pecher2006,rolled up,-26.051995194609706,EleutherAI/pythia-14m,256,14067712
+43,newspaper,b,There was a newspaper on the rack.,b,The newspaper was flat.,match,pecher2006,flat,-14.944689757887657,EleutherAI/pythia-14m,256,14067712
+50,onion,b,There was onion in the batter.,a,The onion was whole.,mismatch,pecher2006,whole,-13.198802994012103,EleutherAI/pythia-14m,256,14067712
+50,onion,b,There was onion in the batter.,b,The onion was sliced.,match,pecher2006,sliced,-16.68582282751191,EleutherAI/pythia-14m,256,14067712
+9,owl,b,There was an owl in the sky.,a,The owl's wings were folded.,mismatch,pecher2006,folded,-16.349950338441634,EleutherAI/pythia-14m,256,14067712
+9,owl,b,There was an owl in the sky.,b,The owl's wings were outstretched.,match,pecher2006,outstretched,-40.52853997859773,EleutherAI/pythia-14m,256,14067712
+23,paint,b,There was paint in the drawing.,a,The paint was in a can.,mismatch,pecher2006,can,-10.571684175039264,EleutherAI/pythia-14m,256,14067712
+23,paint,b,There was paint in the drawing.,b,The paint was in a smear.,match,pecher2006,smear,-16.764524899584146,EleutherAI/pythia-14m,256,14067712
+44,pineapple,b,There was pineapple on the skewer.,a,The pineapple was whole.,mismatch,pecher2006,whole,-13.300510785821345,EleutherAI/pythia-14m,256,14067712
+44,pineapple,b,There was pineapple on the skewer.,b,The pineapple was in chunks.,match,pecher2006,chunks,-17.62225461737798,EleutherAI/pythia-14m,256,14067712
+10,pumpkin,b,There was a pumpkin on the porch.,a,The pumpkin was whole.,mismatch,pecher2006,whole,-13.06077251101068,EleutherAI/pythia-14m,256,14067712
+10,pumpkin,b,There was a pumpkin on the porch.,b,The pumpkin was carved.,match,pecher2006,carved,-17.105035362313394,EleutherAI/pythia-14m,256,14067712
+45,sailboat,b,There was a sailboat on the lake.,a,The sailboat's sails were down.,mismatch,pecher2006,down,-11.765565677774317,EleutherAI/pythia-14m,256,14067712
+45,sailboat,b,There was a sailboat on the lake.,b,The sailboat's sails were up.,match,pecher2006,up,-11.246542675322765,EleutherAI/pythia-14m,256,14067712
+3,scarf,b,There was a scarf on the floor.,a,The scarf was hanging.,mismatch,pecher2006,hanging,-16.18616920525301,EleutherAI/pythia-14m,256,14067712
+3,scarf,b,There was a scarf on the floor.,b,The scarf was crumpled.,match,pecher2006,crumpled,-42.89130646178192,EleutherAI/pythia-14m,256,14067712
+58,shirt,b,There was a shirt on the shelf.,a,The shirt was hanging.,mismatch,pecher2006,hanging,-16.243601778158233,EleutherAI/pythia-14m,256,14067712
+58,shirt,b,There was a shirt on the shelf.,b,The shirt was folded.,match,pecher2006,folded,-16.2523467424838,EleutherAI/pythia-14m,256,14067712
+4,shoelace,b,There was a shoelace in the sneaker.,a,The shoelace was coiled.,mismatch,pecher2006,coiled,-27.96288760609182,EleutherAI/pythia-14m,256,14067712
+4,shoelace,b,There was a shoelace in the sneaker.,b,The shoelace was tied.,match,pecher2006,tied,-15.287458096387274,EleutherAI/pythia-14m,256,14067712
+30,soap,b,There was soap in the bath.,a,The soap was in a bar.,mismatch,pecher2006,bar,-13.00305928708749,EleutherAI/pythia-14m,256,14067712
+30,soap,b,There was soap in the bath.,b,The soap was in a lather.,match,pecher2006,lather,-29.399297714616118,EleutherAI/pythia-14m,256,14067712
+59,spaghetti,b,There was spaghetti in the bowl.,a,The spaghetti was straight.,mismatch,pecher2006,straight,-13.867942143307877,EleutherAI/pythia-14m,256,14067712
+59,spaghetti,b,There was spaghetti in the bowl.,b,The spaghetti was curvy.,match,pecher2006,curvy,-29.71075416334113,EleutherAI/pythia-14m,256,14067712
+11,squid,b,There was squid in the pasta.,a,The squid was alive.,mismatch,pecher2006,alive,-15.34862197228789,EleutherAI/pythia-14m,256,14067712
+11,squid,b,There was squid in the pasta.,b,The squid was cooked.,match,pecher2006,cooked,-15.97836458501177,EleutherAI/pythia-14m,256,14067712
+5,staple,b,There was a staple in the article.,a,The staple was U-shaped.,mismatch,pecher2006,U-shaped,-36.54422203801949,EleutherAI/pythia-14m,256,14067712
+5,staple,b,There was a staple in the article.,b,The staple was clamped inward.,match,pecher2006,inward,-17.49438758308709,EleutherAI/pythia-14m,256,14067712
+26,sugar,b,There was sugar on the spoon.,a,The sugar was in a dispenser.,mismatch,pecher2006,dispenser,-29.18381036033021,EleutherAI/pythia-14m,256,14067712
+26,sugar,b,There was sugar on the spoon.,b,The sugar was in a heap.,match,pecher2006,heap,-16.778798042224054,EleutherAI/pythia-14m,256,14067712
+16,swiss knife,b,There was a swiss knife in his hand.,a,The swiss knife was closed.,mismatch,pecher2006,closed,-13.46418595005866,EleutherAI/pythia-14m,256,14067712
+16,swiss knife,b,There was a swiss knife in his hand.,b,The swiss knife was open.,match,pecher2006,open,-12.676128572320518,EleutherAI/pythia-14m,256,14067712
+31,tape,b,There was tape on the box.,a,There tape was on a roll.,mismatch,pecher2006,on a roll,-32.04298202960581,EleutherAI/pythia-14m,256,14067712
+31,tape,b,There was tape on the box.,b,The tape was in a strip.,match,pecher2006,in a strip,-30.902860795793657,EleutherAI/pythia-14m,256,14067712
+27,tinfoil,b,There was tinfoil in the garbage.,a,The tinfoil was rolled up.,mismatch,pecher2006,rolled up,-26.25649499028569,EleutherAI/pythia-14m,256,14067712
+27,tinfoil,b,There was tinfoil in the garbage.,b,The tinfoil was crumpled up.,match,pecher2006,crumpled up,-54.077432201283436,EleutherAI/pythia-14m,256,14067712
+60,tissue,b,There was a tissue in the trashcan.,a,The tissue was rectangular.,mismatch,pecher2006,rectangular,-18.121992132923125,EleutherAI/pythia-14m,256,14067712
+60,tissue,b,There was a tissue in the trashcan.,b,The tissue was balled up.,match,pecher2006,balled up,-35.39246107843988,EleutherAI/pythia-14m,256,14067712
+46,tomato,b,There was tomato on the pizza.,a,The tomato was whole.,mismatch,pecher2006,whole,-13.11402385074329,EleutherAI/pythia-14m,256,14067712
+46,tomato,b,There was tomato on the pizza.,b,The tomato was sliced.,match,pecher2006,sliced,-16.7992419009624,EleutherAI/pythia-14m,256,14067712
+51,towel,b,There was a towel on the rack.,a,The towel was crumpled.,mismatch,pecher2006,crumpled,-42.9655368443461,EleutherAI/pythia-14m,256,14067712
+51,towel,b,There was a towel on the rack.,b,The towel was hanging.,match,pecher2006,hanging,-16.225851782980133,EleutherAI/pythia-14m,256,14067712
+17,umbrella,b,There was an umbrella in her hand.,a,The umbrella was closed.,mismatch,pecher2006,closed,-13.442058063680724,EleutherAI/pythia-14m,256,14067712
+17,umbrella,b,There was an umbrella in her hand.,b,The umbrella was open.,match,pecher2006,open,-12.622670831805296,EleutherAI/pythia-14m,256,14067712
+24,walnut,b,There was walnut on the brownie.,a,The walnut was whole.,mismatch,pecher2006,whole,-13.334274502370477,EleutherAI/pythia-14m,256,14067712
+24,walnut,b,There was walnut on the brownie.,b,The walnut was chopped.,match,pecher2006,chopped,-16.442920005628363,EleutherAI/pythia-14m,256,14067712
+52,watermelon,b,There was watermelon in the bowl.,a,The watermelon was whole.,mismatch,pecher2006,whole,-13.069194186773274,EleutherAI/pythia-14m,256,14067712
+52,watermelon,b,There was watermelon in the bowl.,b,The watermelon was sliced.,match,pecher2006,sliced,-16.73976066764937,EleutherAI/pythia-14m,256,14067712
+6,wheat,b,There was wheat in the mill.,a,The wheat was in stalks.,mismatch,pecher2006,stalks,-30.634422043435737,EleutherAI/pythia-14m,256,14067712
+6,wheat,b,There was wheat in the mill.,b,The wheat was in grains.,match,pecher2006,grains,-16.07083488764741,EleutherAI/pythia-14m,256,14067712
+34,wool,b,There was wool in the sweater.,a,The wool was in a ball.,mismatch,pecher2006,in a ball,-28.732098620639693,EleutherAI/pythia-14m,256,14067712
+34,wool,b,There was wool in the sweater.,b,The wool was knitted.,match,pecher2006,knitted,-32.08174827499637,EleutherAI/pythia-14m,256,14067712
+25,zodiac,b,There was a zodiac in the garage.,a,The zodiac was deflated.,mismatch,pecher2006,deflated,-30.6235609857297,EleutherAI/pythia-14m,256,14067712
+25,zodiac,b,There was a zodiac in the garage.,b,The zodiac was inflated.,match,pecher2006,inflated,-16.7175956143097,EleutherAI/pythia-14m,256,14067712
